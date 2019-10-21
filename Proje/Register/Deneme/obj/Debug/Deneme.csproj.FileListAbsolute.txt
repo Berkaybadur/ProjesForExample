@@ -1,0 +1,12 @@
+C:\dev\sharp\Register\Deneme\bin\Debug\Deneme.exe.config
+C:\dev\sharp\Register\Deneme\bin\Debug\Deneme.exe
+C:\dev\sharp\Register\Deneme\bin\Debug\Deneme.pdb
+C:\dev\sharp\Register\Deneme\bin\Debug\Entities.exe
+C:\dev\sharp\Register\Deneme\bin\Debug\Entities.pdb
+C:\dev\sharp\Register\Deneme\obj\Debug\Deneme.csprojAssemblyReference.cache
+C:\dev\sharp\Register\Deneme\obj\Debug\Deneme.Properties.Resources.resources
+C:\dev\sharp\Register\Deneme\obj\Debug\Deneme.csproj.GenerateResource.cache
+C:\dev\sharp\Register\Deneme\obj\Debug\Deneme.csproj.CoreCompileInputs.cache
+C:\dev\sharp\Register\Deneme\obj\Debug\Deneme.csproj.CopyComplete
+C:\dev\sharp\Register\Deneme\obj\Debug\Deneme.exe
+C:\dev\sharp\Register\Deneme\obj\Debug\Deneme.pdb

@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebUi.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>HEPSİ ŞURADA</title>
+    <meta charset="UTF-8" />
+     <link href="site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+                    <div class="nav navbar-nav">
+                <img src="icons/yazlogo.png" />
+                <label >TARİH : <%=DateTime.Now.ToString("dd/MM/yyyy")%></label>
+            </div>
+    </asp:ContentPlaceHolder>
+</head>
+<body class="skin-blue layout-top-nav">
+
+    <form id="frmMain" runat="server" autocomplete="off">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+                    <img src="http://localhost:61089/icons/logo3.png" class="auto-style12" />
+            
+
+             <div class="header">
+                        <label class="labeltarih">
+                        TARİH : <%=DateTime.Now.ToString("dd/MM/yyyy")%>
+                        </label>
+                        &nbsp;</div>
+                <br />
+                 <br />
+                 <br />
+                 <br />
+            </div>
+          
+       
+        
+    </nav>
+        <div class="content-wrapper">
+           
+            <asp:ContentPlaceHolder ID="cphBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <br />
+     <br />
+     <br />
+     <br />
+     <br /> <br /> <br /> <br /> <br /><br />
+     <div class="footer" >Yaz Bilgi Sistemleri A.Ş.</div>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</body>
+
+</html>
+

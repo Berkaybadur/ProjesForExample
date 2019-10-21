@@ -1,0 +1,12 @@
+C:\dev\sharp\Register\Register\bin\Debug\Register.exe.config
+C:\dev\sharp\Register\Register\bin\Debug\Register.exe
+C:\dev\sharp\Register\Register\bin\Debug\Register.pdb
+C:\dev\sharp\Register\Register\bin\Debug\Entities.exe
+C:\dev\sharp\Register\Register\bin\Debug\Entities.pdb
+C:\dev\sharp\Register\Register\obj\Debug\Register.csprojAssemblyReference.cache
+C:\dev\sharp\Register\Register\obj\Debug\Register.RegisterForm.resources
+C:\dev\sharp\Register\Register\obj\Debug\Register.csproj.GenerateResource.cache
+C:\dev\sharp\Register\Register\obj\Debug\Register.csproj.CoreCompileInputs.cache
+C:\dev\sharp\Register\Register\obj\Debug\Register.csproj.CopyComplete
+C:\dev\sharp\Register\Register\obj\Debug\Register.exe
+C:\dev\sharp\Register\Register\obj\Debug\Register.pdb

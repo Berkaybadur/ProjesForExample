@@ -1,0 +1,529 @@
+﻿body {
+    text-align: center;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+.dropdownmenu {
+    font-family: Arial, Helvetica, Sans-Serif;
+    background-color: #898382;
+}
+
+.textbox {
+    font-family: Arial Helvetica, Sans-Serif;
+    background-color: aliceblue;
+    border: 1px solid;
+    padding: 10px;
+   border-style:outset;
+   border-color:darkblue;
+   margin-left:50px;  
+   margin-top:30px;
+}
+
+.button {
+    background-color: #1864ba;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 200px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.header {
+    text-align: center;
+   margin-bottom:100px;
+  float:right;
+}
+
+.div {
+    display: grid;
+    grid: 150px / auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 20px;
+    margin: 50px;
+}
+
+.img {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 30px;
+    border-image-source: url(indir2.png);
+}
+
+.form2{
+    margin:10px 250px 250px 250px;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.FooterStyle {
+    background-color: #a33;
+    color: White;
+    text-align: right;
+}
+
+.ortalaAlan {
+    width: 500px;
+    height: 80px;
+    background-color: #fff;
+    border: 5px solid #E9E9E9;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -310px;
+    margin-top: -40px;
+   
+}
+
+.text {
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-family: Arial Helvetica, Sans-Serif;
+    background-color: #E7E0DF;
+    border: 1px solid;
+    
+}
+
+.buttonkayit {
+    background-color: #6495ED;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 105px;
+}
+
+.auto-style1 {
+    width: 200px;
+    margin-left: 20px;
+    background-color: #fff;
+}
+
+.auto-style2 {
+    border-radius: 10px;
+    font-family: "Arial Helvetica", Sans-Serif;
+    border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    margin-left: 10px;
+    padding: 12px 20px;
+    background-color: #fff;
+  border-color:darkgray;
+}
+
+.auto-style3 {
+    border-radius: 10px;
+    font-family: "Arial Helvetica", Sans-Serif;
+    border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    margin-left: 10px;
+    padding: 12px 20px;
+    background-color: #fff;
+    border-color: darkgray;
+}
+
+.auto-style4 {
+    border-radius: 10px;
+    font-family: "Arial Helvetica", Sans-Serif;
+    border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    margin-left: 20px;
+    padding: 12px 20px;
+    background-color: #fff;
+    border-color: darkgray;
+}
+
+.auto-style5 {
+    border-radius: 10px;
+    font-family: "Arial Helvetica", Sans-Serif;
+    border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    margin-left: 20px;
+    padding: 12px 20px;
+    background-color: #fff;
+    border-color: darkgray;
+}
+
+.auto-style6 {
+    border-radius: 10px;
+    font-family: "Arial Helvetica", Sans-Serif;
+    border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    margin-left: 20px;
+    padding: 12px 20px;
+    background-color: #fff;
+    border-color: darkgray;
+}
+
+.auto-style7 {
+    border-radius: 10px;
+    font-family: "Arial Helvetica", Sans-Serif;
+    border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    margin-left: 15px;
+    padding: 12px 20px;
+    background-color: #fff;
+    border-color: darkgray;
+}
+
+.labelaracddl {
+    margin-right:55px;
+    font-size:17px;
+    color:white;
+}
+
+.labelmodelddl {
+    margin-right: 20px;
+    font-size: 17px;
+    color:white;
+}
+.ddlArac {
+    width: 180px;
+    border-radius: 8px;
+    color:black;
+}
+.ddlModel {
+    margin-right: 0px;
+    width: 180px;
+    border-radius: 8px;
+    color:black;
+}
+
+.labelkullanici {
+    margin-right: 220px;
+}
+
+.labeltarih {
+    color:black;
+}
+
+.tarih {
+    margin-left: 35px;
+    color: black;
+    border-radius: 8px;
+}
+
+.aciklama {
+    margin-left: 45px;
+    border-radius: 8px;
+    -webkit-line-clamp: 2;
+}
+
+.buttonclose {
+    background-color: white;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 40px;
+    margin-left:1090px;
+    background-image:url('icons/power.png')
+    
+}
+
+
+.tb {
+    height: 25px;
+    color: black;
+    border: 1px solid #0099FF;
+    margin-left: 935px;
+    padding-left: 35px;
+    background-color: white;
+    background-image: url('icons/search.png');
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}
+
+.buttonSeacrh {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    margin-left: 996px;
+    padding: 12px 30px;
+    background-color: #1864ba;
+}
+
+.auto-style8 {
+    margin-left: 40px;
+}
+
+.auto-style9 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    margin-left: 900px;
+    padding: 12px 30px;
+    background-color: white;
+    background-image: url('icons/cancels.png');
+  
+}
+
+
+.divbody
+{
+    margin-top:-50px;
+}
+
+.auto-style10 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    margin-left: 1170px;
+    padding: 12px 30px;
+    background-color: white;
+    background-image: url('icons/cancels.png');
+}
+
+.auto-style11 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    margin-left: 853px;
+    padding: 12px 30px;
+    background-color: chocolate;
+}
+  
+.datagrid{
+    margin-left:105px;
+}
+.üyetext{
+
+    font-family:'Times New Roman', Times, serif
+}
+
+.button:hover {
+    color: white;
+    background: #0089ff;
+}
+
+.buttonkayit:hover {
+    color: white;
+    background: #0089ff;
+}
+
+.auto-style14 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    margin-left: 835px;
+    padding: 12px 30px;
+    background-color:cornflowerblue;
+}
+
+
+.auto-style10 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    margin-left: 1170px;
+    padding: 12px 30px;
+    background-color: white;
+    background-image: url('icons/cancels.png');
+}
+
+.auto-style11 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    margin-left: 853px;
+    padding: 12px 30px;
+    background-color: cornflowerblue;
+}
+
+ .auto-style11:hover {
+        color: white;
+        background: #FF9933;
+    }
+
+.textboxilan {
+    border-radius: 8px;
+}
+
+.auto-style12 {
+    width: 215px;
+    margin-left: 90px;
+    background-color: #fff;
+    height: 77px;
+}
+
+.auto-style15 {
+   width:1000px;
+   
+}
+
+
+.auto-style16 {
+    height: 25px;
+    color: black;
+    border: 1px solid #0099FF;
+    margin-left: 1055px;
+    padding-left: 35px;
+    background-color: white;
+    background-image: url('icons/search.png');
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}
+
+.auto-style17 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    margin-left: 996px;
+    padding: 12px 30px;
+    background-color: cornflowerblue;
+}
+
+
+.düzenle {
+    text-decoration: none;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 17px;
+}
+
+a:hover {
+    font-family: 'Times New Roman';
+    font-size: 17px;
+    color: #FF9933;
+}
+
+.kullanici
+{
+    font-family:'Times New Roman';
+    font-size:25px;
+}
+
+.labelaciklama
+{
+    margin-left:-10px;
+    font-size:18px;
+}
+
+
+.datagridview
+{
+    width:1100px;
+
+}
+
+
+.labelbüyük{
+    font-size:18px;
+
+}
+
+.kutu1 {
+
+   
+    position: absolute;
+    left: 150px;
+    top: 150px;
+}
+
+.genislik{
+    width:50px;
+}
+
+.labelKM {
+    margin-left: -10px;
+    font-size: 18px;
+}
+.textKM{
+    margin-left:95px;
+    border-radius:8px;
+}
+.textfiyat {
+    margin-left: 87px;
+    border-radius: 8px;
+}
+.textyil {
+    margin-left: 103px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
