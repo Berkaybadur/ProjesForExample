@@ -1,0 +1,2 @@
+C:\Users\Sahin\Desktop\PLATO MYO\2018 - 2019 AKADEMİK YILI\Bahar\Nesne Tabanlı Programlama\1. Öğretim\Hafta 10\_TemplateMethod\bin\Debug\_TemplateMethod.exe.config
+C:\Users\Berkay\Desktop\_TemplateMethod\bin\Debug\_TemplateMethod.exe.config
