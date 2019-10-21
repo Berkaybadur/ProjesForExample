@@ -1,0 +1,51 @@
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.dll.config
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.pdb
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\bin\Debug\_DataLayer.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\bin\Debug\_DataLayer.pdb
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\bin\Debug\_DataLayer.dll.config
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.csprojAssemblyReference.cache
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.csproj.CopyComplete
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.pdb
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.dll.config
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.dll
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.pdb
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\bin\Debug\_DataLayer.dll
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\bin\Debug\_DataLayer.pdb
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.dll
+C:\Users\Berkay\Desktop\Quiz\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.pdb
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.dll.config
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.dll
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.pdb
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\_DataLayer.dll
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\_DataLayer.pdb
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.dll
+C:\Users\Berkay\Desktop\BerkayQuiz\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.pdb
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.dll.config
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.dll
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\_BusinessLayer.pdb
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\_DataLayer.dll
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\_DataLayer.pdb
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.dll
+C:\Users\Berkay\Desktop\ÖNEMLİ NOTLAR\BerkayQuiz\BankSolution\_BusinessLayer\obj\Debug\_BusinessLayer.pdb

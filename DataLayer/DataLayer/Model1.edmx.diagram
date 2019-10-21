@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8a1e9a7d54f646c5a8ad26efb1598da9" Name="Diagram1" ZoomLevel="71">
+        <EntityTypeShape EntityType="LimanOtomModel.Araclar" Width="1.5" PointX="5.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.Depo" Width="1.5" PointX="10.5" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.Gemiler" Width="1.5" PointX="8.25" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.ilce" Width="1.5" PointX="3" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.iller" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.Kaptan" Width="1.5" PointX="6" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.Kargo" Width="1.5" PointX="5.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.KargoSirket" Width="1.5" PointX="5.25" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.Limanlar" Width="1.5" PointX="13.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.Musteri" Width="1.5" PointX="8.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.Sefer" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.SiparisUrun" Width="1.5" PointX="10.5" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.Sofor" Width="1.5" PointX="3" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.TedarikciLiman" Width="1.5" PointX="8.25" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.urunKateg" Width="1.5" PointX="6" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LimanOtomModel.urunler" Width="1.5" PointX="8.25" PointY="24.25" IsExpanded="true" />
+        <AssociationConnector Association="LimanOtomModel.FK_Araclar_il" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Araclar_ilce" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Araclar_Sefer" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Araclar_Sofor" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Depo_Araclar" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Depo_urunler" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Gemiler_il" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Gemiler_ilce" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Gemiler_Kaptan" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Gemiler_Sefer" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Gemiler_urun" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Limanlar_Gemiler" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_ilce_il" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Kargo_ilce" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_KargoSirket_ilce" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Limanlar_ilce" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Musteri_ilce" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_SiparisUrun_ilce" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_TedarikciLiman_ilce" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Kargo_il" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_KargoSirket_il" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Limanlar_il" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Musteri_il" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_SiparisUrun_il" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_TedarikciLiman_il" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Kargo_KargoSirket" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Kargo_urunler" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Siparisurun_KargoSirket" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Limanlar_TedarikciFirma" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Siparisurun_Musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Siparisurun_urunKateg" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_Siparisurun_urunler" ManuallyRouted="false" />
+        <AssociationConnector Association="LimanOtomModel.FK_urunler_urunKateg" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,38 @@
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\_PresentationLayer.exe.config
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\_PresentationLayer.exe
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\_PresentationLayer.pdb
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\EntityFramework.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\_BusinessLayer.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\_DataLayer.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\_BusinessLayer.pdb
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\_BusinessLayer.dll.config
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\_DataLayer.pdb
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\_DataLayer.dll.config
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\EntityFramework.xml
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.csprojAssemblyReference.cache
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.Form1.resources
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.Properties.Resources.resources
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.csproj.GenerateResource.cache
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.csproj.CopyComplete
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.exe
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.pdb
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\bin\Debug\_PresentationLayer.exe.config
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.exe
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.pdb
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\bin\Debug\_PresentationLayer.exe
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\bin\Debug\_PresentationLayer.pdb
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\bin\Debug\EntityFramework.dll
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\bin\Debug\_BusinessLayer.dll
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\bin\Debug\_DataLayer.dll
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\bin\Debug\_BusinessLayer.pdb
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\bin\Debug\_DataLayer.pdb
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\bin\Debug\EntityFramework.xml
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.csprojResolveAssemblyReference.cache
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.Form1.resources
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.Properties.Resources.resources
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_PresentationLayer\obj\Debug\_PresentationLayer.csproj.GenerateResource.Cache

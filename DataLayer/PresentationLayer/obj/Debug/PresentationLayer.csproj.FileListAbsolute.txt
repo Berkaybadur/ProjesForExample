@@ -1,0 +1,44 @@
+c:\Users\Berkay\documents\visual studio 2015\Projects\DataLayer\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+c:\Users\Berkay\documents\visual studio 2015\Projects\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+c:\Users\Berkay\documents\visual studio 2015\Projects\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+c:\Users\Berkay\documents\visual studio 2015\Projects\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.urunler.resources
+c:\Users\Berkay\documents\visual studio 2015\Projects\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.Cache
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\bin\Debug\PresentationLayer.exe
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\bin\Debug\PresentationLayer.pdb
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\bin\Debug\DataLayer.dll
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\bin\Debug\EntityFramework.dll
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\bin\Debug\DataLayer.pdb
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\bin\Debug\EntityFramework.xml
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.exe
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.LimanSistem.resources
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.KullanıcıGiriş.resources
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.MüşteriGiriş.resources
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.MüşteriKayıt.resources
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.Sipariş.resources
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.exe
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\bin\Debug\PresentationLayer.exe
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\bin\Debug\PresentationLayer.pdb
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\bin\Debug\DataLayer.dll
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\bin\Debug\EntityFramework.dll
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\bin\Debug\DataLayer.pdb
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\bin\Debug\EntityFramework.xml
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.KullanıcıGiriş.resources
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.LimanSistem.resources
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.MüşteriGiriş.resources
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.MüşteriKayıt.resources
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.Sipariş.resources
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.urunler.resources
+C:\Users\Berkay\Desktop\DataLayer\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.Cache

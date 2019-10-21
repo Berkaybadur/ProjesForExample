@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LimanOtomModelStoreContainer" CdmEntityContainer="LimanOtomEntities1">
+    <EntitySetMapping Name="Araclars">
+      <EntityTypeMapping TypeName="LimanOtomModel.Araclar">
+        <MappingFragment StoreEntitySet="Araclar">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AracAd" ColumnName="AracAd" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="SoforId" ColumnName="SoforId" />
+          <ScalarProperty Name="SeferId" ColumnName="SeferId" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Depoes">
+      <EntityTypeMapping TypeName="LimanOtomModel.Depo">
+        <MappingFragment StoreEntitySet="Depo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AraclarId" ColumnName="AraclarId" />
+          <ScalarProperty Name="urunlerId" ColumnName="urunlerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gemilers">
+      <EntityTypeMapping TypeName="LimanOtomModel.Gemiler">
+        <MappingFragment StoreEntitySet="Gemiler">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GemiAd" ColumnName="GemiAd" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+          <ScalarProperty Name="urunId" ColumnName="urunId" />
+          <ScalarProperty Name="KaptanId" ColumnName="KaptanId" />
+          <ScalarProperty Name="SeferId" ColumnName="SeferId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ilces">
+      <EntityTypeMapping TypeName="LimanOtomModel.ilce">
+        <MappingFragment StoreEntitySet="ilce">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ilce1" ColumnName="ilce" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="illers">
+      <EntityTypeMapping TypeName="LimanOtomModel.iller">
+        <MappingFragment StoreEntitySet="iller">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="il" ColumnName="il" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kaptans">
+      <EntityTypeMapping TypeName="LimanOtomModel.Kaptan">
+        <MappingFragment StoreEntitySet="Kaptan">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KaptanAd" ColumnName="KaptanAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kargoes">
+      <EntityTypeMapping TypeName="LimanOtomModel.Kargo">
+        <MappingFragment StoreEntitySet="Kargo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="urunlerId" ColumnName="urunlerId" />
+          <ScalarProperty Name="DepoId" ColumnName="DepoId" />
+          <ScalarProperty Name="KargoSirketId" ColumnName="KargoSirketId" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KargoSirkets">
+      <EntityTypeMapping TypeName="LimanOtomModel.KargoSirket">
+        <MappingFragment StoreEntitySet="KargoSirket">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SirketAd" ColumnName="SirketAd" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Limanlars">
+      <EntityTypeMapping TypeName="LimanOtomModel.Limanlar">
+        <MappingFragment StoreEntitySet="Limanlar">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Limanad" ColumnName="Limanad" />
+          <ScalarProperty Name="GemilerId" ColumnName="GemilerId" />
+          <ScalarProperty Name="TedarikciLimanId" ColumnName="TedarikciLimanId" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Musteris">
+      <EntityTypeMapping TypeName="LimanOtomModel.Musteri">
+        <MappingFragment StoreEntitySet="Musteri">
+          <ScalarProperty Name="MusteriId" ColumnName="MusteriId" />
+          <ScalarProperty Name="MusteriAd" ColumnName="MusteriAd" />
+          <ScalarProperty Name="MusteriSAd" ColumnName="MusteriSAd" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Tc" ColumnName="Tc" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="EPosta" ColumnName="EPosta" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sefers">
+      <EntityTypeMapping TypeName="LimanOtomModel.Sefer">
+        <MappingFragment StoreEntitySet="Sefer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KalkisSaat" ColumnName="KalkisSaat" />
+          <ScalarProperty Name="VarisSaat" ColumnName="VarisSaat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiparisUruns">
+      <EntityTypeMapping TypeName="LimanOtomModel.SiparisUrun">
+        <MappingFragment StoreEntitySet="SiparisUrun">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="urunlerId" ColumnName="urunlerId" />
+          <ScalarProperty Name="urunKategId" ColumnName="urunKategId" />
+          <ScalarProperty Name="MusteriId" ColumnName="MusteriId" />
+          <ScalarProperty Name="KargoSirketId" ColumnName="KargoSirketId" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sofors">
+      <EntityTypeMapping TypeName="LimanOtomModel.Sofor">
+        <MappingFragment StoreEntitySet="Sofor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SoforAd" ColumnName="SoforAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TedarikciLimen">
+      <EntityTypeMapping TypeName="LimanOtomModel.TedarikciLiman">
+        <MappingFragment StoreEntitySet="TedarikciLiman">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TedarikciFirma" ColumnName="TedarikciFirma" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="urunKategs">
+      <EntityTypeMapping TypeName="LimanOtomModel.urunKateg">
+        <MappingFragment StoreEntitySet="urunKateg">
+          <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+          <ScalarProperty Name="KategAd" ColumnName="KategAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="urunlers">
+      <EntityTypeMapping TypeName="LimanOtomModel.urunler">
+        <MappingFragment StoreEntitySet="urunler">
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="urunAd" ColumnName="urunAd" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="urunKategId" ColumnName="urunKategId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_CreateAraclar" FunctionName="LimanOtomModel.Store.SP_CreateAraclar" />
+    <FunctionImportMapping FunctionImportName="SP_CreateDepo" FunctionName="LimanOtomModel.Store.SP_CreateDepo" />
+    <FunctionImportMapping FunctionImportName="SP_CreateGemiler" FunctionName="LimanOtomModel.Store.SP_CreateGemiler" />
+    <FunctionImportMapping FunctionImportName="SP_Createiller" FunctionName="LimanOtomModel.Store.SP_Createiller" />
+    <FunctionImportMapping FunctionImportName="SP_CreateKaptan" FunctionName="LimanOtomModel.Store.SP_CreateKaptan" />
+    <FunctionImportMapping FunctionImportName="SP_CreateKargo" FunctionName="LimanOtomModel.Store.SP_CreateKargo" />
+    <FunctionImportMapping FunctionImportName="SP_CreateKargoSirket" FunctionName="LimanOtomModel.Store.SP_CreateKargoSirket" />
+    <FunctionImportMapping FunctionImportName="SP_CreateLimanlar" FunctionName="LimanOtomModel.Store.SP_CreateLimanlar" />
+    <FunctionImportMapping FunctionImportName="SP_CreateMusteri" FunctionName="LimanOtomModel.Store.SP_CreateMusteri" />
+    <FunctionImportMapping FunctionImportName="SP_CreateSefer" FunctionName="LimanOtomModel.Store.SP_CreateSefer" />
+    <FunctionImportMapping FunctionImportName="SP_CreateSiparisUrun" FunctionName="LimanOtomModel.Store.SP_CreateSiparisUrun" />
+    <FunctionImportMapping FunctionImportName="SP_CreateTedarikciLiman" FunctionName="LimanOtomModel.Store.SP_CreateTedarikciLiman" />
+    <FunctionImportMapping FunctionImportName="SP_CreateurunKateg" FunctionName="LimanOtomModel.Store.SP_CreateurunKateg" />
+    <FunctionImportMapping FunctionImportName="SP_Createurunler" FunctionName="LimanOtomModel.Store.SP_Createurunler" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteAraclar" FunctionName="LimanOtomModel.Store.SP_DeleteAraclar" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteDepo" FunctionName="LimanOtomModel.Store.SP_DeleteDepo" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteGemiler" FunctionName="LimanOtomModel.Store.SP_DeleteGemiler" />
+    <FunctionImportMapping FunctionImportName="SP_Deleteilce" FunctionName="LimanOtomModel.Store.SP_Deleteilce" />
+    <FunctionImportMapping FunctionImportName="SP_Deleteiller" FunctionName="LimanOtomModel.Store.SP_Deleteiller" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteKaptan" FunctionName="LimanOtomModel.Store.SP_DeleteKaptan" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteKargo" FunctionName="LimanOtomModel.Store.SP_DeleteKargo" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteKargoSirket" FunctionName="LimanOtomModel.Store.SP_DeleteKargoSirket" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteLimanlar" FunctionName="LimanOtomModel.Store.SP_DeleteLimanlar" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteMusteri" FunctionName="LimanOtomModel.Store.SP_DeleteMusteri" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteSefer" FunctionName="LimanOtomModel.Store.SP_DeleteSefer" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteSiparisUrun" FunctionName="LimanOtomModel.Store.SP_DeleteSiparisUrun" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteTedarikciLiman" FunctionName="LimanOtomModel.Store.SP_DeleteTedarikciLiman" />
+    <FunctionImportMapping FunctionImportName="SP_DeleteurunKateg" FunctionName="LimanOtomModel.Store.SP_DeleteurunKateg" />
+    <FunctionImportMapping FunctionImportName="SP_Deleteurunler" FunctionName="LimanOtomModel.Store.SP_Deleteurunler" />
+    <FunctionImportMapping FunctionImportName="SP_SelectAraclar" FunctionName="LimanOtomModel.Store.SP_SelectAraclar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelectAraclar_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AracAd" ColumnName="AracAd" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="SoforId" ColumnName="SoforId" />
+          <ScalarProperty Name="SeferId" ColumnName="SeferId" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SelectDepo" FunctionName="LimanOtomModel.Store.SP_SelectDepo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelectDepo_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AraclarId" ColumnName="AraclarId" />
+          <ScalarProperty Name="urunlerId" ColumnName="urunlerId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SelectGemiler" FunctionName="LimanOtomModel.Store.SP_SelectGemiler">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelectGemiler_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GemiAd" ColumnName="GemiAd" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+          <ScalarProperty Name="urunId" ColumnName="urunId" />
+          <ScalarProperty Name="KaptanId" ColumnName="KaptanId" />
+          <ScalarProperty Name="SeferId" ColumnName="SeferId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Selectilce" FunctionName="LimanOtomModel.Store.SP_Selectilce">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_Selectilce_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Selectiller" FunctionName="LimanOtomModel.Store.SP_Selectiller">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_Selectiller_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="il" ColumnName="il" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SelectKargo" FunctionName="LimanOtomModel.Store.SP_SelectKargo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelectKargo_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="urunlerId" ColumnName="urunlerId" />
+          <ScalarProperty Name="DepoId" ColumnName="DepoId" />
+          <ScalarProperty Name="KargoSirketId" ColumnName="KargoSirketId" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SelectKargoSirket" FunctionName="LimanOtomModel.Store.SP_SelectKargoSirket">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelectKargoSirket_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SirketAd" ColumnName="SirketAd" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SelectLimanlar" FunctionName="LimanOtomModel.Store.SP_SelectLimanlar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelectLimanlar_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Limanad" ColumnName="Limanad" />
+          <ScalarProperty Name="GemilerId" ColumnName="GemilerId" />
+          <ScalarProperty Name="TedarikciLimanId" ColumnName="TedarikciLimanId" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SelectMusteri" FunctionName="LimanOtomModel.Store.SP_SelectMusteri">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelectMusteri_Result">
+          <ScalarProperty Name="MusteriId" ColumnName="MusteriId" />
+          <ScalarProperty Name="MusteriAd" ColumnName="MusteriAd" />
+          <ScalarProperty Name="MusteriSAd" ColumnName="MusteriSAd" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Tc" ColumnName="Tc" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="EPosta" ColumnName="EPosta" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SelectSefer" FunctionName="LimanOtomModel.Store.SP_SelectSefer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelectSefer_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KalkisSaat" ColumnName="KalkisSaat" />
+          <ScalarProperty Name="VarisSaat" ColumnName="VarisSaat" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SelectSiparisUrun" FunctionName="LimanOtomModel.Store.SP_SelectSiparisUrun">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelectSiparisUrun_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="urunlerId" ColumnName="urunlerId" />
+          <ScalarProperty Name="urunKategId" ColumnName="urunKategId" />
+          <ScalarProperty Name="MusteriId" ColumnName="MusteriId" />
+          <ScalarProperty Name="KargoSirketId" ColumnName="KargoSirketId" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SelectSofor" FunctionName="LimanOtomModel.Store.SP_SelectSofor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelectSofor_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SoforAd" ColumnName="SoforAd" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SelectTedarikciLiman" FunctionName="LimanOtomModel.Store.SP_SelectTedarikciLiman">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelectTedarikciLiman_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TedarikciFirma" ColumnName="TedarikciFirma" />
+          <ScalarProperty Name="ilId" ColumnName="ilId" />
+          <ScalarProperty Name="ilceId" ColumnName="ilceId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SelecturunKateg" FunctionName="LimanOtomModel.Store.SP_SelecturunKateg">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_SelecturunKateg_Result">
+          <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+          <ScalarProperty Name="KategAd" ColumnName="KategAd" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Selecturunler" FunctionName="LimanOtomModel.Store.SP_Selecturunler">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LimanOtomModel.SP_Selecturunler_Result">
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="urunAd" ColumnName="urunAd" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="urunKategId" ColumnName="urunKategId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_UpdateAraclar" FunctionName="LimanOtomModel.Store.SP_UpdateAraclar" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateDepo" FunctionName="LimanOtomModel.Store.SP_UpdateDepo" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateGemiler" FunctionName="LimanOtomModel.Store.SP_UpdateGemiler" />
+    <FunctionImportMapping FunctionImportName="SP_Updateilce" FunctionName="LimanOtomModel.Store.SP_Updateilce" />
+    <FunctionImportMapping FunctionImportName="SP_Updateiller" FunctionName="LimanOtomModel.Store.SP_Updateiller" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateKaptan" FunctionName="LimanOtomModel.Store.SP_UpdateKaptan" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateKargo" FunctionName="LimanOtomModel.Store.SP_UpdateKargo" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateKargoSirket" FunctionName="LimanOtomModel.Store.SP_UpdateKargoSirket" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateLimanlar" FunctionName="LimanOtomModel.Store.SP_UpdateLimanlar" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateMusteri" FunctionName="LimanOtomModel.Store.SP_UpdateMusteri" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateSefer" FunctionName="LimanOtomModel.Store.SP_UpdateSefer" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateSiparisUrun" FunctionName="LimanOtomModel.Store.SP_UpdateSiparisUrun" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateTedarikciLiman" FunctionName="LimanOtomModel.Store.SP_UpdateTedarikciLiman" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateurunKateg" FunctionName="LimanOtomModel.Store.SP_UpdateurunKateg" />
+    <FunctionImportMapping FunctionImportName="SP_Updateurunler" FunctionName="LimanOtomModel.Store.SP_Updateurunler" />
+  </EntityContainerMapping>
+</Mapping>

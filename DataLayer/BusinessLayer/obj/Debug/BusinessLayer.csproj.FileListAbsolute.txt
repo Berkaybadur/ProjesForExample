@@ -1,0 +1,12 @@
+c:\users\berkay\documents\visual studio 2015\Projects\DataLayer\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\BusinessLayer\bin\Debug\DataLayer.dll
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\BusinessLayer\bin\Debug\DataLayer.pdb
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Berkay\Documents\Visual Studio 2015\Projects\DataLayer\BusinessLayer\obj\Debug\BusinessLayer.pdb

@@ -1,0 +1,1109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LimanOtomModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Araclar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AracAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Aktif" Type="Boolean" />
+    <Property Name="SoforId" Type="Int32" />
+    <Property Name="SeferId" Type="Int32" />
+    <Property Name="ilId" Type="Int32" />
+    <Property Name="ilceId" Type="Int32" />
+    <NavigationProperty Name="iller" Relationship="Self.FK_Araclar_il" FromRole="Araclar" ToRole="iller" />
+    <NavigationProperty Name="ilce" Relationship="Self.FK_Araclar_ilce" FromRole="Araclar" ToRole="ilce" />
+    <NavigationProperty Name="Sefer" Relationship="Self.FK_Araclar_Sefer" FromRole="Araclar" ToRole="Sefer" />
+    <NavigationProperty Name="Sofor" Relationship="Self.FK_Araclar_Sofor" FromRole="Araclar" ToRole="Sofor" />
+    <NavigationProperty Name="Depoes" Relationship="Self.FK_Depo_Araclar" FromRole="Araclar" ToRole="Depo" />
+  </EntityType>
+  <EntityType Name="Depo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AraclarId" Type="Int32" />
+    <Property Name="urunlerId" Type="Int32" />
+    <NavigationProperty Name="Araclar" Relationship="Self.FK_Depo_Araclar" FromRole="Depo" ToRole="Araclar" />
+    <NavigationProperty Name="urunler" Relationship="Self.FK_Depo_urunler" FromRole="Depo" ToRole="urunler" />
+  </EntityType>
+  <EntityType Name="Gemiler">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GemiAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Aktif" Type="Boolean" />
+    <Property Name="ilId" Type="Int32" />
+    <Property Name="ilceId" Type="Int32" />
+    <Property Name="urunId" Type="Int32" />
+    <Property Name="KaptanId" Type="Int32" />
+    <Property Name="SeferId" Type="Int32" />
+    <NavigationProperty Name="iller" Relationship="Self.FK_Gemiler_il" FromRole="Gemiler" ToRole="iller" />
+    <NavigationProperty Name="ilce" Relationship="Self.FK_Gemiler_ilce" FromRole="Gemiler" ToRole="ilce" />
+    <NavigationProperty Name="Kaptan" Relationship="Self.FK_Gemiler_Kaptan" FromRole="Gemiler" ToRole="Kaptan" />
+    <NavigationProperty Name="Sefer" Relationship="Self.FK_Gemiler_Sefer" FromRole="Gemiler" ToRole="Sefer" />
+    <NavigationProperty Name="urunler" Relationship="Self.FK_Gemiler_urun" FromRole="Gemiler" ToRole="urunler" />
+    <NavigationProperty Name="Limanlars" Relationship="Self.FK_Limanlar_Gemiler" FromRole="Gemiler" ToRole="Limanlar" />
+  </EntityType>
+  <EntityType Name="ilce">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ilce1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ilId" Type="Int32" />
+    <NavigationProperty Name="Araclars" Relationship="Self.FK_Araclar_ilce" FromRole="ilce" ToRole="Araclar" />
+    <NavigationProperty Name="Gemilers" Relationship="Self.FK_Gemiler_ilce" FromRole="ilce" ToRole="Gemiler" />
+    <NavigationProperty Name="iller" Relationship="Self.FK_ilce_il" FromRole="ilce" ToRole="iller" />
+    <NavigationProperty Name="Kargoes" Relationship="Self.FK_Kargo_ilce" FromRole="ilce" ToRole="Kargo" />
+    <NavigationProperty Name="KargoSirkets" Relationship="Self.FK_KargoSirket_ilce" FromRole="ilce" ToRole="KargoSirket" />
+    <NavigationProperty Name="Limanlars" Relationship="Self.FK_Limanlar_ilce" FromRole="ilce" ToRole="Limanlar" />
+    <NavigationProperty Name="Musteris" Relationship="Self.FK_Musteri_ilce" FromRole="ilce" ToRole="Musteri" />
+    <NavigationProperty Name="SiparisUruns" Relationship="Self.FK_SiparisUrun_ilce" FromRole="ilce" ToRole="SiparisUrun" />
+    <NavigationProperty Name="TedarikciLimen" Relationship="Self.FK_TedarikciLiman_ilce" FromRole="ilce" ToRole="TedarikciLiman" />
+  </EntityType>
+  <EntityType Name="iller">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="il" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Araclars" Relationship="Self.FK_Araclar_il" FromRole="iller" ToRole="Araclar" />
+    <NavigationProperty Name="Gemilers" Relationship="Self.FK_Gemiler_il" FromRole="iller" ToRole="Gemiler" />
+    <NavigationProperty Name="ilces" Relationship="Self.FK_ilce_il" FromRole="iller" ToRole="ilce" />
+    <NavigationProperty Name="Kargoes" Relationship="Self.FK_Kargo_il" FromRole="iller" ToRole="Kargo" />
+    <NavigationProperty Name="KargoSirkets" Relationship="Self.FK_KargoSirket_il" FromRole="iller" ToRole="KargoSirket" />
+    <NavigationProperty Name="Limanlars" Relationship="Self.FK_Limanlar_il" FromRole="iller" ToRole="Limanlar" />
+    <NavigationProperty Name="Musteris" Relationship="Self.FK_Musteri_il" FromRole="iller" ToRole="Musteri" />
+    <NavigationProperty Name="SiparisUruns" Relationship="Self.FK_SiparisUrun_il" FromRole="iller" ToRole="SiparisUrun" />
+    <NavigationProperty Name="TedarikciLimen" Relationship="Self.FK_TedarikciLiman_il" FromRole="iller" ToRole="TedarikciLiman" />
+  </EntityType>
+  <EntityType Name="Kaptan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KaptanAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Gemilers" Relationship="Self.FK_Gemiler_Kaptan" FromRole="Kaptan" ToRole="Gemiler" />
+  </EntityType>
+  <EntityType Name="Kargo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="urunlerId" Type="Int32" />
+    <Property Name="DepoId" Type="Int32" />
+    <Property Name="KargoSirketId" Type="Int32" />
+    <Property Name="ilId" Type="Int32" />
+    <Property Name="ilceId" Type="Int32" />
+    <NavigationProperty Name="ilce" Relationship="Self.FK_Kargo_ilce" FromRole="Kargo" ToRole="ilce" />
+    <NavigationProperty Name="iller" Relationship="Self.FK_Kargo_il" FromRole="Kargo" ToRole="iller" />
+    <NavigationProperty Name="KargoSirket" Relationship="Self.FK_Kargo_KargoSirket" FromRole="Kargo" ToRole="KargoSirket" />
+    <NavigationProperty Name="urunler" Relationship="Self.FK_Kargo_urunler" FromRole="Kargo" ToRole="urunler" />
+  </EntityType>
+  <EntityType Name="KargoSirket">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SirketAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ilId" Type="Int32" />
+    <Property Name="ilceId" Type="Int32" />
+    <NavigationProperty Name="ilce" Relationship="Self.FK_KargoSirket_ilce" FromRole="KargoSirket" ToRole="ilce" />
+    <NavigationProperty Name="iller" Relationship="Self.FK_KargoSirket_il" FromRole="KargoSirket" ToRole="iller" />
+    <NavigationProperty Name="Kargoes" Relationship="Self.FK_Kargo_KargoSirket" FromRole="KargoSirket" ToRole="Kargo" />
+    <NavigationProperty Name="SiparisUruns" Relationship="Self.FK_Siparisurun_KargoSirket" FromRole="KargoSirket" ToRole="SiparisUrun" />
+  </EntityType>
+  <EntityType Name="Limanlar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Limanad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GemilerId" Type="Int32" />
+    <Property Name="TedarikciLimanId" Type="Int32" />
+    <Property Name="ilId" Type="Int32" />
+    <Property Name="ilceId" Type="Int32" />
+    <NavigationProperty Name="Gemiler" Relationship="Self.FK_Limanlar_Gemiler" FromRole="Limanlar" ToRole="Gemiler" />
+    <NavigationProperty Name="ilce" Relationship="Self.FK_Limanlar_ilce" FromRole="Limanlar" ToRole="ilce" />
+    <NavigationProperty Name="iller" Relationship="Self.FK_Limanlar_il" FromRole="Limanlar" ToRole="iller" />
+    <NavigationProperty Name="TedarikciLiman" Relationship="Self.FK_Limanlar_TedarikciFirma" FromRole="Limanlar" ToRole="TedarikciLiman" />
+  </EntityType>
+  <EntityType Name="Musteri">
+    <Key>
+      <PropertyRef Name="MusteriId" />
+    </Key>
+    <Property Name="MusteriId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MusteriAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MusteriSAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tel" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="Tc" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="Adres" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EPosta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ilId" Type="Int32" />
+    <Property Name="ilceId" Type="Int32" />
+    <NavigationProperty Name="ilce" Relationship="Self.FK_Musteri_ilce" FromRole="Musteri" ToRole="ilce" />
+    <NavigationProperty Name="iller" Relationship="Self.FK_Musteri_il" FromRole="Musteri" ToRole="iller" />
+    <NavigationProperty Name="SiparisUruns" Relationship="Self.FK_Siparisurun_Musteri" FromRole="Musteri" ToRole="SiparisUrun" />
+  </EntityType>
+  <EntityType Name="Sefer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KalkisSaat" Type="Int32" />
+    <Property Name="VarisSaat" Type="Int32" />
+    <NavigationProperty Name="Araclars" Relationship="Self.FK_Araclar_Sefer" FromRole="Sefer" ToRole="Araclar" />
+    <NavigationProperty Name="Gemilers" Relationship="Self.FK_Gemiler_Sefer" FromRole="Sefer" ToRole="Gemiler" />
+  </EntityType>
+  <EntityType Name="SiparisUrun">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="urunlerId" Type="Int32" />
+    <Property Name="urunKategId" Type="Int32" />
+    <Property Name="MusteriId" Type="Int32" />
+    <Property Name="KargoSirketId" Type="Int32" />
+    <Property Name="ilId" Type="Int32" />
+    <Property Name="ilceId" Type="Int32" />
+    <NavigationProperty Name="ilce" Relationship="Self.FK_SiparisUrun_ilce" FromRole="SiparisUrun" ToRole="ilce" />
+    <NavigationProperty Name="iller" Relationship="Self.FK_SiparisUrun_il" FromRole="SiparisUrun" ToRole="iller" />
+    <NavigationProperty Name="KargoSirket" Relationship="Self.FK_Siparisurun_KargoSirket" FromRole="SiparisUrun" ToRole="KargoSirket" />
+    <NavigationProperty Name="Musteri" Relationship="Self.FK_Siparisurun_Musteri" FromRole="SiparisUrun" ToRole="Musteri" />
+    <NavigationProperty Name="urunKateg" Relationship="Self.FK_Siparisurun_urunKateg" FromRole="SiparisUrun" ToRole="urunKateg" />
+    <NavigationProperty Name="urunler" Relationship="Self.FK_Siparisurun_urunler" FromRole="SiparisUrun" ToRole="urunler" />
+  </EntityType>
+  <EntityType Name="Sofor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SoforAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Araclars" Relationship="Self.FK_Araclar_Sofor" FromRole="Sofor" ToRole="Araclar" />
+  </EntityType>
+  <EntityType Name="TedarikciLiman">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TedarikciFirma" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ilId" Type="Int32" />
+    <Property Name="ilceId" Type="Int32" />
+    <NavigationProperty Name="ilce" Relationship="Self.FK_TedarikciLiman_ilce" FromRole="TedarikciLiman" ToRole="ilce" />
+    <NavigationProperty Name="iller" Relationship="Self.FK_TedarikciLiman_il" FromRole="TedarikciLiman" ToRole="iller" />
+    <NavigationProperty Name="Limanlars" Relationship="Self.FK_Limanlar_TedarikciFirma" FromRole="TedarikciLiman" ToRole="Limanlar" />
+  </EntityType>
+  <EntityType Name="urunKateg">
+    <Key>
+      <PropertyRef Name="KategoriId" />
+    </Key>
+    <Property Name="KategoriId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KategAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SiparisUruns" Relationship="Self.FK_Siparisurun_urunKateg" FromRole="urunKateg" ToRole="SiparisUrun" />
+    <NavigationProperty Name="urunlers" Relationship="Self.FK_urunler_urunKateg" FromRole="urunKateg" ToRole="urunler" />
+  </EntityType>
+  <EntityType Name="urunler">
+    <Key>
+      <PropertyRef Name="UrunId" />
+    </Key>
+    <Property Name="UrunId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="urunAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Miktar" Type="Int32" />
+    <Property Name="Fiyat" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="urunKategId" Type="Int32" />
+    <NavigationProperty Name="Depoes" Relationship="Self.FK_Depo_urunler" FromRole="urunler" ToRole="Depo" />
+    <NavigationProperty Name="Gemilers" Relationship="Self.FK_Gemiler_urun" FromRole="urunler" ToRole="Gemiler" />
+    <NavigationProperty Name="Kargoes" Relationship="Self.FK_Kargo_urunler" FromRole="urunler" ToRole="Kargo" />
+    <NavigationProperty Name="SiparisUruns" Relationship="Self.FK_Siparisurun_urunler" FromRole="urunler" ToRole="SiparisUrun" />
+    <NavigationProperty Name="urunKateg" Relationship="Self.FK_urunler_urunKateg" FromRole="urunler" ToRole="urunKateg" />
+  </EntityType>
+  <Association Name="FK_Araclar_il">
+    <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
+    <End Role="Araclar" Type="Self.Araclar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Araclar">
+        <PropertyRef Name="ilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Araclar_ilce">
+    <End Role="ilce" Type="Self.ilce" Multiplicity="0..1" />
+    <End Role="Araclar" Type="Self.Araclar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilce">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Araclar">
+        <PropertyRef Name="ilceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Araclar_Sefer">
+    <End Role="Sefer" Type="Self.Sefer" Multiplicity="0..1" />
+    <End Role="Araclar" Type="Self.Araclar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sefer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Araclar">
+        <PropertyRef Name="SeferId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Araclar_Sofor">
+    <End Role="Sofor" Type="Self.Sofor" Multiplicity="0..1" />
+    <End Role="Araclar" Type="Self.Araclar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sofor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Araclar">
+        <PropertyRef Name="SoforId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Depo_Araclar">
+    <End Role="Araclar" Type="Self.Araclar" Multiplicity="0..1" />
+    <End Role="Depo" Type="Self.Depo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Araclar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Depo">
+        <PropertyRef Name="AraclarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Depo_urunler">
+    <End Role="urunler" Type="Self.urunler" Multiplicity="0..1" />
+    <End Role="Depo" Type="Self.Depo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="urunler">
+        <PropertyRef Name="UrunId" />
+      </Principal>
+      <Dependent Role="Depo">
+        <PropertyRef Name="urunlerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gemiler_il">
+    <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
+    <End Role="Gemiler" Type="Self.Gemiler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Gemiler">
+        <PropertyRef Name="ilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gemiler_ilce">
+    <End Role="ilce" Type="Self.ilce" Multiplicity="0..1" />
+    <End Role="Gemiler" Type="Self.Gemiler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilce">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Gemiler">
+        <PropertyRef Name="ilceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gemiler_Kaptan">
+    <End Role="Kaptan" Type="Self.Kaptan" Multiplicity="0..1" />
+    <End Role="Gemiler" Type="Self.Gemiler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kaptan">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Gemiler">
+        <PropertyRef Name="KaptanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gemiler_Sefer">
+    <End Role="Sefer" Type="Self.Sefer" Multiplicity="0..1" />
+    <End Role="Gemiler" Type="Self.Gemiler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sefer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Gemiler">
+        <PropertyRef Name="SeferId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gemiler_urun">
+    <End Role="urunler" Type="Self.urunler" Multiplicity="0..1" />
+    <End Role="Gemiler" Type="Self.Gemiler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="urunler">
+        <PropertyRef Name="UrunId" />
+      </Principal>
+      <Dependent Role="Gemiler">
+        <PropertyRef Name="urunId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Limanlar_Gemiler">
+    <End Role="Gemiler" Type="Self.Gemiler" Multiplicity="0..1" />
+    <End Role="Limanlar" Type="Self.Limanlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gemiler">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Limanlar">
+        <PropertyRef Name="GemilerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ilce_il">
+    <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
+    <End Role="ilce" Type="Self.ilce" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ilce">
+        <PropertyRef Name="ilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kargo_ilce">
+    <End Role="ilce" Type="Self.ilce" Multiplicity="0..1" />
+    <End Role="Kargo" Type="Self.Kargo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilce">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Kargo">
+        <PropertyRef Name="ilceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KargoSirket_ilce">
+    <End Role="ilce" Type="Self.ilce" Multiplicity="0..1" />
+    <End Role="KargoSirket" Type="Self.KargoSirket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilce">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="KargoSirket">
+        <PropertyRef Name="ilceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Limanlar_ilce">
+    <End Role="ilce" Type="Self.ilce" Multiplicity="0..1" />
+    <End Role="Limanlar" Type="Self.Limanlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilce">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Limanlar">
+        <PropertyRef Name="ilceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Musteri_ilce">
+    <End Role="ilce" Type="Self.ilce" Multiplicity="0..1" />
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilce">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Musteri">
+        <PropertyRef Name="ilceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiparisUrun_ilce">
+    <End Role="ilce" Type="Self.ilce" Multiplicity="0..1" />
+    <End Role="SiparisUrun" Type="Self.SiparisUrun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilce">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SiparisUrun">
+        <PropertyRef Name="ilceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TedarikciLiman_ilce">
+    <End Role="ilce" Type="Self.ilce" Multiplicity="0..1" />
+    <End Role="TedarikciLiman" Type="Self.TedarikciLiman" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilce">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TedarikciLiman">
+        <PropertyRef Name="ilceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kargo_il">
+    <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
+    <End Role="Kargo" Type="Self.Kargo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Kargo">
+        <PropertyRef Name="ilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KargoSirket_il">
+    <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
+    <End Role="KargoSirket" Type="Self.KargoSirket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="KargoSirket">
+        <PropertyRef Name="ilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Limanlar_il">
+    <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
+    <End Role="Limanlar" Type="Self.Limanlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Limanlar">
+        <PropertyRef Name="ilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Musteri_il">
+    <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Musteri">
+        <PropertyRef Name="ilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiparisUrun_il">
+    <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
+    <End Role="SiparisUrun" Type="Self.SiparisUrun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SiparisUrun">
+        <PropertyRef Name="ilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TedarikciLiman_il">
+    <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
+    <End Role="TedarikciLiman" Type="Self.TedarikciLiman" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TedarikciLiman">
+        <PropertyRef Name="ilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kargo_KargoSirket">
+    <End Role="KargoSirket" Type="Self.KargoSirket" Multiplicity="0..1" />
+    <End Role="Kargo" Type="Self.Kargo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KargoSirket">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Kargo">
+        <PropertyRef Name="KargoSirketId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kargo_urunler">
+    <End Role="urunler" Type="Self.urunler" Multiplicity="0..1" />
+    <End Role="Kargo" Type="Self.Kargo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="urunler">
+        <PropertyRef Name="UrunId" />
+      </Principal>
+      <Dependent Role="Kargo">
+        <PropertyRef Name="urunlerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Siparisurun_KargoSirket">
+    <End Role="KargoSirket" Type="Self.KargoSirket" Multiplicity="0..1" />
+    <End Role="SiparisUrun" Type="Self.SiparisUrun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KargoSirket">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SiparisUrun">
+        <PropertyRef Name="KargoSirketId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Limanlar_TedarikciFirma">
+    <End Role="TedarikciLiman" Type="Self.TedarikciLiman" Multiplicity="0..1" />
+    <End Role="Limanlar" Type="Self.Limanlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TedarikciLiman">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Limanlar">
+        <PropertyRef Name="TedarikciLimanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Siparisurun_Musteri">
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="0..1" />
+    <End Role="SiparisUrun" Type="Self.SiparisUrun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriId" />
+      </Principal>
+      <Dependent Role="SiparisUrun">
+        <PropertyRef Name="MusteriId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Siparisurun_urunKateg">
+    <End Role="urunKateg" Type="Self.urunKateg" Multiplicity="0..1" />
+    <End Role="SiparisUrun" Type="Self.SiparisUrun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="urunKateg">
+        <PropertyRef Name="KategoriId" />
+      </Principal>
+      <Dependent Role="SiparisUrun">
+        <PropertyRef Name="urunKategId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Siparisurun_urunler">
+    <End Role="urunler" Type="Self.urunler" Multiplicity="0..1" />
+    <End Role="SiparisUrun" Type="Self.SiparisUrun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="urunler">
+        <PropertyRef Name="UrunId" />
+      </Principal>
+      <Dependent Role="SiparisUrun">
+        <PropertyRef Name="urunlerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_urunler_urunKateg">
+    <End Role="urunKateg" Type="Self.urunKateg" Multiplicity="0..1" />
+    <End Role="urunler" Type="Self.urunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="urunKateg">
+        <PropertyRef Name="KategoriId" />
+      </Principal>
+      <Dependent Role="urunler">
+        <PropertyRef Name="urunKategId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LimanOtomEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Araclars" EntityType="Self.Araclar" />
+    <EntitySet Name="Depoes" EntityType="Self.Depo" />
+    <EntitySet Name="Gemilers" EntityType="Self.Gemiler" />
+    <EntitySet Name="ilces" EntityType="Self.ilce" />
+    <EntitySet Name="illers" EntityType="Self.iller" />
+    <EntitySet Name="Kaptans" EntityType="Self.Kaptan" />
+    <EntitySet Name="Kargoes" EntityType="Self.Kargo" />
+    <EntitySet Name="KargoSirkets" EntityType="Self.KargoSirket" />
+    <EntitySet Name="Limanlars" EntityType="Self.Limanlar" />
+    <EntitySet Name="Musteris" EntityType="Self.Musteri" />
+    <EntitySet Name="Sefers" EntityType="Self.Sefer" />
+    <EntitySet Name="SiparisUruns" EntityType="Self.SiparisUrun" />
+    <EntitySet Name="Sofors" EntityType="Self.Sofor" />
+    <EntitySet Name="TedarikciLimen" EntityType="Self.TedarikciLiman" />
+    <EntitySet Name="urunKategs" EntityType="Self.urunKateg" />
+    <EntitySet Name="urunlers" EntityType="Self.urunler" />
+    <AssociationSet Name="FK_Araclar_il" Association="Self.FK_Araclar_il">
+      <End Role="iller" EntitySet="illers" />
+      <End Role="Araclar" EntitySet="Araclars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Araclar_ilce" Association="Self.FK_Araclar_ilce">
+      <End Role="ilce" EntitySet="ilces" />
+      <End Role="Araclar" EntitySet="Araclars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Araclar_Sefer" Association="Self.FK_Araclar_Sefer">
+      <End Role="Sefer" EntitySet="Sefers" />
+      <End Role="Araclar" EntitySet="Araclars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Araclar_Sofor" Association="Self.FK_Araclar_Sofor">
+      <End Role="Sofor" EntitySet="Sofors" />
+      <End Role="Araclar" EntitySet="Araclars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Depo_Araclar" Association="Self.FK_Depo_Araclar">
+      <End Role="Araclar" EntitySet="Araclars" />
+      <End Role="Depo" EntitySet="Depoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Depo_urunler" Association="Self.FK_Depo_urunler">
+      <End Role="urunler" EntitySet="urunlers" />
+      <End Role="Depo" EntitySet="Depoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gemiler_il" Association="Self.FK_Gemiler_il">
+      <End Role="iller" EntitySet="illers" />
+      <End Role="Gemiler" EntitySet="Gemilers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gemiler_ilce" Association="Self.FK_Gemiler_ilce">
+      <End Role="ilce" EntitySet="ilces" />
+      <End Role="Gemiler" EntitySet="Gemilers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gemiler_Kaptan" Association="Self.FK_Gemiler_Kaptan">
+      <End Role="Kaptan" EntitySet="Kaptans" />
+      <End Role="Gemiler" EntitySet="Gemilers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gemiler_Sefer" Association="Self.FK_Gemiler_Sefer">
+      <End Role="Sefer" EntitySet="Sefers" />
+      <End Role="Gemiler" EntitySet="Gemilers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gemiler_urun" Association="Self.FK_Gemiler_urun">
+      <End Role="urunler" EntitySet="urunlers" />
+      <End Role="Gemiler" EntitySet="Gemilers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Limanlar_Gemiler" Association="Self.FK_Limanlar_Gemiler">
+      <End Role="Gemiler" EntitySet="Gemilers" />
+      <End Role="Limanlar" EntitySet="Limanlars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ilce_il" Association="Self.FK_ilce_il">
+      <End Role="iller" EntitySet="illers" />
+      <End Role="ilce" EntitySet="ilces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kargo_ilce" Association="Self.FK_Kargo_ilce">
+      <End Role="ilce" EntitySet="ilces" />
+      <End Role="Kargo" EntitySet="Kargoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KargoSirket_ilce" Association="Self.FK_KargoSirket_ilce">
+      <End Role="ilce" EntitySet="ilces" />
+      <End Role="KargoSirket" EntitySet="KargoSirkets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Limanlar_ilce" Association="Self.FK_Limanlar_ilce">
+      <End Role="ilce" EntitySet="ilces" />
+      <End Role="Limanlar" EntitySet="Limanlars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Musteri_ilce" Association="Self.FK_Musteri_ilce">
+      <End Role="ilce" EntitySet="ilces" />
+      <End Role="Musteri" EntitySet="Musteris" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiparisUrun_ilce" Association="Self.FK_SiparisUrun_ilce">
+      <End Role="ilce" EntitySet="ilces" />
+      <End Role="SiparisUrun" EntitySet="SiparisUruns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TedarikciLiman_ilce" Association="Self.FK_TedarikciLiman_ilce">
+      <End Role="ilce" EntitySet="ilces" />
+      <End Role="TedarikciLiman" EntitySet="TedarikciLimen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kargo_il" Association="Self.FK_Kargo_il">
+      <End Role="iller" EntitySet="illers" />
+      <End Role="Kargo" EntitySet="Kargoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KargoSirket_il" Association="Self.FK_KargoSirket_il">
+      <End Role="iller" EntitySet="illers" />
+      <End Role="KargoSirket" EntitySet="KargoSirkets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Limanlar_il" Association="Self.FK_Limanlar_il">
+      <End Role="iller" EntitySet="illers" />
+      <End Role="Limanlar" EntitySet="Limanlars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Musteri_il" Association="Self.FK_Musteri_il">
+      <End Role="iller" EntitySet="illers" />
+      <End Role="Musteri" EntitySet="Musteris" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiparisUrun_il" Association="Self.FK_SiparisUrun_il">
+      <End Role="iller" EntitySet="illers" />
+      <End Role="SiparisUrun" EntitySet="SiparisUruns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TedarikciLiman_il" Association="Self.FK_TedarikciLiman_il">
+      <End Role="iller" EntitySet="illers" />
+      <End Role="TedarikciLiman" EntitySet="TedarikciLimen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kargo_KargoSirket" Association="Self.FK_Kargo_KargoSirket">
+      <End Role="KargoSirket" EntitySet="KargoSirkets" />
+      <End Role="Kargo" EntitySet="Kargoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kargo_urunler" Association="Self.FK_Kargo_urunler">
+      <End Role="urunler" EntitySet="urunlers" />
+      <End Role="Kargo" EntitySet="Kargoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Siparisurun_KargoSirket" Association="Self.FK_Siparisurun_KargoSirket">
+      <End Role="KargoSirket" EntitySet="KargoSirkets" />
+      <End Role="SiparisUrun" EntitySet="SiparisUruns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Limanlar_TedarikciFirma" Association="Self.FK_Limanlar_TedarikciFirma">
+      <End Role="TedarikciLiman" EntitySet="TedarikciLimen" />
+      <End Role="Limanlar" EntitySet="Limanlars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Siparisurun_Musteri" Association="Self.FK_Siparisurun_Musteri">
+      <End Role="Musteri" EntitySet="Musteris" />
+      <End Role="SiparisUrun" EntitySet="SiparisUruns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Siparisurun_urunKateg" Association="Self.FK_Siparisurun_urunKateg">
+      <End Role="urunKateg" EntitySet="urunKategs" />
+      <End Role="SiparisUrun" EntitySet="SiparisUruns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Siparisurun_urunler" Association="Self.FK_Siparisurun_urunler">
+      <End Role="urunler" EntitySet="urunlers" />
+      <End Role="SiparisUrun" EntitySet="SiparisUruns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_urunler_urunKateg" Association="Self.FK_urunler_urunKateg">
+      <End Role="urunKateg" EntitySet="urunKategs" />
+      <End Role="urunler" EntitySet="urunlers" />
+    </AssociationSet>
+    <FunctionImport Name="SP_CreateAraclar">
+      <Parameter Name="AracAd" Mode="In" Type="String" />
+      <Parameter Name="Aktif" Mode="In" Type="Boolean" />
+      <Parameter Name="SoforId" Mode="In" Type="Int32" />
+      <Parameter Name="SeferId" Mode="In" Type="Int32" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateDepo">
+      <Parameter Name="AraclarId" Mode="In" Type="Int32" />
+      <Parameter Name="urunlerId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateGemiler">
+      <Parameter Name="GemiAd" Mode="In" Type="String" />
+      <Parameter Name="Aktif" Mode="In" Type="Boolean" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+      <Parameter Name="urunId" Mode="In" Type="Int32" />
+      <Parameter Name="KaptanId" Mode="In" Type="Int32" />
+      <Parameter Name="SeferId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Createiller">
+      <Parameter Name="il" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateKaptan">
+      <Parameter Name="KaptanAd" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateKargo">
+      <Parameter Name="urunlerId" Mode="In" Type="Int32" />
+      <Parameter Name="DepoId" Mode="In" Type="Int32" />
+      <Parameter Name="KargoSirketId" Mode="In" Type="Int32" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateKargoSirket">
+      <Parameter Name="SirketAd" Mode="In" Type="Int32" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateLimanlar">
+      <Parameter Name="Limanad" Mode="In" Type="String" />
+      <Parameter Name="GemilerId" Mode="In" Type="Int32" />
+      <Parameter Name="TedarikciLimanId" Mode="In" Type="Int32" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateMusteri">
+      <Parameter Name="MusteriAd" Mode="In" Type="String" />
+      <Parameter Name="MusteriSAd" Mode="In" Type="String" />
+      <Parameter Name="Tel" Mode="In" Type="String" />
+      <Parameter Name="Tc" Mode="In" Type="String" />
+      <Parameter Name="Adres" Mode="In" Type="String" />
+      <Parameter Name="EPosta" Mode="In" Type="String" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateSefer">
+      <Parameter Name="KalkisSaat" Mode="In" Type="Int32" />
+      <Parameter Name="VarisSaat" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateSiparisUrun">
+      <Parameter Name="urunlerId" Mode="In" Type="Int32" />
+      <Parameter Name="urunKategId" Mode="In" Type="Int32" />
+      <Parameter Name="MusteriId" Mode="In" Type="Int32" />
+      <Parameter Name="KargoSirketId" Mode="In" Type="Int32" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateTedarikciLiman">
+      <Parameter Name="TedarikciFirma" Mode="In" Type="String" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateurunKateg">
+      <Parameter Name="KategAd" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Createurunler">
+      <Parameter Name="urunAd" Mode="In" Type="String" />
+      <Parameter Name="Miktar" Mode="In" Type="Int32" />
+      <Parameter Name="Fiyat" Mode="In" Type="Decimal" />
+      <Parameter Name="urunKategId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteAraclar">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteDepo">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteGemiler">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Deleteilce">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Deleteiller">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteKaptan">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteKargo">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteKargoSirket">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteLimanlar">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteMusteri">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteSefer">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteSiparisUrun">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteTedarikciLiman">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DeleteurunKateg">
+      <Parameter Name="KategoriId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Deleteurunler">
+      <Parameter Name="UrunId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SelectAraclar" ReturnType="Collection(LimanOtomModel.SP_SelectAraclar_Result)" />
+    <FunctionImport Name="SP_SelectDepo" ReturnType="Collection(LimanOtomModel.SP_SelectDepo_Result)" />
+    <FunctionImport Name="SP_SelectGemiler" ReturnType="Collection(LimanOtomModel.SP_SelectGemiler_Result)" />
+    <FunctionImport Name="SP_Selectilce" ReturnType="Collection(LimanOtomModel.SP_Selectilce_Result)" />
+    <FunctionImport Name="SP_Selectiller" ReturnType="Collection(LimanOtomModel.SP_Selectiller_Result)" />
+    <FunctionImport Name="SP_SelectKargo" ReturnType="Collection(LimanOtomModel.SP_SelectKargo_Result)" />
+    <FunctionImport Name="SP_SelectKargoSirket" ReturnType="Collection(LimanOtomModel.SP_SelectKargoSirket_Result)" />
+    <FunctionImport Name="SP_SelectLimanlar" ReturnType="Collection(LimanOtomModel.SP_SelectLimanlar_Result)" />
+    <FunctionImport Name="SP_SelectMusteri" ReturnType="Collection(LimanOtomModel.SP_SelectMusteri_Result)" />
+    <FunctionImport Name="SP_SelectSefer" ReturnType="Collection(LimanOtomModel.SP_SelectSefer_Result)" />
+    <FunctionImport Name="SP_SelectSiparisUrun" ReturnType="Collection(LimanOtomModel.SP_SelectSiparisUrun_Result)" />
+    <FunctionImport Name="SP_SelectSofor" ReturnType="Collection(LimanOtomModel.SP_SelectSofor_Result)" />
+    <FunctionImport Name="SP_SelectTedarikciLiman" ReturnType="Collection(LimanOtomModel.SP_SelectTedarikciLiman_Result)" />
+    <FunctionImport Name="SP_SelecturunKateg" ReturnType="Collection(LimanOtomModel.SP_SelecturunKateg_Result)" />
+    <FunctionImport Name="SP_Selecturunler" ReturnType="Collection(LimanOtomModel.SP_Selecturunler_Result)" />
+    <FunctionImport Name="SP_UpdateAraclar">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="AracAd" Mode="In" Type="String" />
+      <Parameter Name="Aktif" Mode="In" Type="Boolean" />
+      <Parameter Name="SoforId" Mode="In" Type="Int32" />
+      <Parameter Name="SeferId" Mode="In" Type="Int32" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateDepo">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="AraclarId" Mode="In" Type="Int32" />
+      <Parameter Name="urunlerId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateGemiler">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="GemiAd" Mode="In" Type="String" />
+      <Parameter Name="Aktif" Mode="In" Type="Boolean" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+      <Parameter Name="urunId" Mode="In" Type="Int32" />
+      <Parameter Name="KaptanId" Mode="In" Type="Int32" />
+      <Parameter Name="SeferId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Updateilce">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="ilce" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Updateiller">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="il" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateKaptan">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="KaptanAd" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateKargo">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="urunlerId" Mode="In" Type="Int32" />
+      <Parameter Name="DepoId" Mode="In" Type="Int32" />
+      <Parameter Name="KargoSirketId" Mode="In" Type="Int32" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateKargoSirket">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="SirketAd" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateLimanlar">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="Limanad" Mode="In" Type="String" />
+      <Parameter Name="GemilerId" Mode="In" Type="Int32" />
+      <Parameter Name="TedarikciLimanId" Mode="In" Type="Int32" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateMusteri">
+      <Parameter Name="MusteriId" Mode="In" Type="Int32" />
+      <Parameter Name="MusteriAd" Mode="In" Type="String" />
+      <Parameter Name="MusteriSAd" Mode="In" Type="String" />
+      <Parameter Name="Tel" Mode="In" Type="String" />
+      <Parameter Name="Tc" Mode="In" Type="String" />
+      <Parameter Name="Adres" Mode="In" Type="String" />
+      <Parameter Name="EPosta" Mode="In" Type="String" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateSefer">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="KalkisSaat" Mode="In" Type="Int32" />
+      <Parameter Name="VarisSaat" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateSiparisUrun">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="urunlerId" Mode="In" Type="Int32" />
+      <Parameter Name="urunKategId" Mode="In" Type="Int32" />
+      <Parameter Name="MusteriId" Mode="In" Type="Int32" />
+      <Parameter Name="KargoSirketId" Mode="In" Type="Int32" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateTedarikciLiman">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="TedarikciFirma" Mode="In" Type="String" />
+      <Parameter Name="ilId" Mode="In" Type="Int32" />
+      <Parameter Name="ilceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateurunKateg">
+      <Parameter Name="KategoriId" Mode="In" Type="Int32" />
+      <Parameter Name="KategAd" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Updateurunler">
+      <Parameter Name="UrunId" Mode="In" Type="Int32" />
+      <Parameter Name="urunAd" Mode="In" Type="String" />
+      <Parameter Name="Miktar" Mode="In" Type="Int32" />
+      <Parameter Name="Fiyat" Mode="In" Type="Decimal" />
+      <Parameter Name="urunKategId" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="SP_SelectAraclar_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="AracAd" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="Aktif" Nullable="true" />
+    <Property Type="Int32" Name="SoforId" Nullable="true" />
+    <Property Type="Int32" Name="SeferId" Nullable="true" />
+    <Property Type="Int32" Name="ilId" Nullable="true" />
+    <Property Type="Int32" Name="ilceId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SelectDepo_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="AraclarId" Nullable="true" />
+    <Property Type="Int32" Name="urunlerId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SelectGemiler_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="GemiAd" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="Aktif" Nullable="true" />
+    <Property Type="Int32" Name="ilId" Nullable="true" />
+    <Property Type="Int32" Name="ilceId" Nullable="true" />
+    <Property Type="Int32" Name="urunId" Nullable="true" />
+    <Property Type="Int32" Name="KaptanId" Nullable="true" />
+    <Property Type="Int32" Name="SeferId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_Selectilce_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="ilce" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="ilId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_Selectiller_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="il" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SP_SelectKargo_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="urunlerId" Nullable="true" />
+    <Property Type="Int32" Name="DepoId" Nullable="true" />
+    <Property Type="Int32" Name="KargoSirketId" Nullable="true" />
+    <Property Type="Int32" Name="ilId" Nullable="true" />
+    <Property Type="Int32" Name="ilceId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SelectKargoSirket_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="SirketAd" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="ilId" Nullable="true" />
+    <Property Type="Int32" Name="ilceId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SelectLimanlar_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Limanad" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="GemilerId" Nullable="true" />
+    <Property Type="Int32" Name="TedarikciLimanId" Nullable="true" />
+    <Property Type="Int32" Name="ilId" Nullable="true" />
+    <Property Type="Int32" Name="ilceId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SelectMusteri_Result">
+    <Property Type="Int32" Name="MusteriId" Nullable="false" />
+    <Property Type="String" Name="MusteriAd" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MusteriSAd" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Tel" Nullable="true" MaxLength="11" />
+    <Property Type="String" Name="Tc" Nullable="true" MaxLength="11" />
+    <Property Type="String" Name="Adres" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="EPosta" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="ilId" Nullable="true" />
+    <Property Type="Int32" Name="ilceId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SelectSefer_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="KalkisSaat" Nullable="true" />
+    <Property Type="Int32" Name="VarisSaat" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SelectSiparisUrun_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="urunlerId" Nullable="true" />
+    <Property Type="Int32" Name="urunKategId" Nullable="true" />
+    <Property Type="Int32" Name="MusteriId" Nullable="true" />
+    <Property Type="Int32" Name="KargoSirketId" Nullable="true" />
+    <Property Type="Int32" Name="ilId" Nullable="true" />
+    <Property Type="Int32" Name="ilceId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SelectSofor_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="SoforAd" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SP_SelectTedarikciLiman_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="TedarikciFirma" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="ilId" Nullable="true" />
+    <Property Type="Int32" Name="ilceId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SelecturunKateg_Result">
+    <Property Type="Int32" Name="KategoriId" Nullable="false" />
+    <Property Type="String" Name="KategAd" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SP_Selecturunler_Result">
+    <Property Type="Int32" Name="UrunId" Nullable="false" />
+    <Property Type="String" Name="urunAd" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Miktar" Nullable="true" />
+    <Property Type="Decimal" Name="Fiyat" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="urunKategId" Nullable="true" />
+  </ComplexType>
+</Schema>

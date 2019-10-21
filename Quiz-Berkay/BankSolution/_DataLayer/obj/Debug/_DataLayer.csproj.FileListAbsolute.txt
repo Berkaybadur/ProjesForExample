@@ -1,0 +1,22 @@
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\bin\Debug\_DataLayer.dll.config
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\bin\Debug\_DataLayer.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\bin\Debug\_DataLayer.pdb
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\obj\Debug\_DataLayer.csprojAssemblyReference.cache
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\obj\Debug\_DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\obj\Debug\_DataLayer.csproj.CopyComplete
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\obj\Debug\_DataLayer.dll
+C:\Users\mesut\OneDrive\Masaüstü\Görsel Programlama\Homework4\BankSolution\_DataLayer\obj\Debug\_DataLayer.pdb
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_DataLayer\bin\Debug\_DataLayer.dll.config
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_DataLayer\bin\Debug\_DataLayer.dll
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_DataLayer\bin\Debug\_DataLayer.pdb
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_DataLayer\obj\Debug\_DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_DataLayer\obj\Debug\_DataLayer.dll
+C:\Users\Berkay\Desktop\Quiz-Berkay\BankSolution\_DataLayer\obj\Debug\_DataLayer.pdb
