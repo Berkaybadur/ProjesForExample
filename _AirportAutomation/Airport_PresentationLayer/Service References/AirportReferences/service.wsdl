@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AirportService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Airport.DataEntities.Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAirportService_GetCountries_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountries" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetCountries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddCountries_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCountries" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddCountries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCountry" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddProvince_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddProvince" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddProvince_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddProvinceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteProvince_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProvince" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteProvince_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProvinceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetProvince_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProvince" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetProvince_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProvinceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetCustomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomers" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetCustomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddExpedition_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddExpedition" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddExpedition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddExpeditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetExpedition_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExpedition" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetExpedition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExpeditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddPersonel_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPersonel" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddPersonel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPersonelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetPersonel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonel" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetPersonel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTicket" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTicket" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddAirplane_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAirplane" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddAirplane_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAirplaneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetAirplane_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAirplane" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetAirplane_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAirplaneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_ListForComboBox_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListForComboBox" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_ListForComboBox_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListForComboBoxResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteAirplane_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAirplane" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteAirplane_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAirplaneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditAirplane_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditAirplane" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditAirplane_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditAirplaneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteExpedition_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteExpedition" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteExpedition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteExpeditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditExpedition_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditExpedition" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditExpedition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditExpeditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeletePersonel_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePersonel" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeletePersonel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePersonelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditPersonel_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditPersonel" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditPersonel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditPersonelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTicket" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditTicket" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddUserTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserTicket" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_AddUserTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditUserTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditUserTicket" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_EditUserTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditUserTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteUserTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserTicket" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_DeleteUserTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetUserTicket_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserTicket" />
+  </wsdl:message>
+  <wsdl:message name="IAirportService_GetUserTicket_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserTicketResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAirportService">
+    <wsdl:operation name="GetCountries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/GetCountries" message="tns:IAirportService_GetCountries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/GetCountriesResponse" message="tns:IAirportService_GetCountries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCountries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/AddCountries" message="tns:IAirportService_AddCountries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/AddCountriesResponse" message="tns:IAirportService_AddCountries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/DeleteCountry" message="tns:IAirportService_DeleteCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/DeleteCountryResponse" message="tns:IAirportService_DeleteCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddProvince">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/AddProvince" message="tns:IAirportService_AddProvince_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/AddProvinceResponse" message="tns:IAirportService_AddProvince_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProvince">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/DeleteProvince" message="tns:IAirportService_DeleteProvince_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/DeleteProvinceResponse" message="tns:IAirportService_DeleteProvince_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProvince">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/GetProvince" message="tns:IAirportService_GetProvince_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/GetProvinceResponse" message="tns:IAirportService_GetProvince_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/AddCustomer" message="tns:IAirportService_AddCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/AddCustomerResponse" message="tns:IAirportService_AddCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/GetCustomers" message="tns:IAirportService_GetCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/GetCustomersResponse" message="tns:IAirportService_GetCustomers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExpedition">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/AddExpedition" message="tns:IAirportService_AddExpedition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/AddExpeditionResponse" message="tns:IAirportService_AddExpedition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpedition">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/GetExpedition" message="tns:IAirportService_GetExpedition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/GetExpeditionResponse" message="tns:IAirportService_GetExpedition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPersonel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/AddPersonel" message="tns:IAirportService_AddPersonel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/AddPersonelResponse" message="tns:IAirportService_AddPersonel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/GetPersonel" message="tns:IAirportService_GetPersonel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/GetPersonelResponse" message="tns:IAirportService_GetPersonel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/AddTicket" message="tns:IAirportService_AddTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/AddTicketResponse" message="tns:IAirportService_AddTicket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/GetTicket" message="tns:IAirportService_GetTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/GetTicketResponse" message="tns:IAirportService_GetTicket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAirplane">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/AddAirplane" message="tns:IAirportService_AddAirplane_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/AddAirplaneResponse" message="tns:IAirportService_AddAirplane_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAirplane">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/GetAirplane" message="tns:IAirportService_GetAirplane_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/GetAirplaneResponse" message="tns:IAirportService_GetAirplane_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListForComboBox">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/ListForComboBox" message="tns:IAirportService_ListForComboBox_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/ListForComboBoxResponse" message="tns:IAirportService_ListForComboBox_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAirplane">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/DeleteAirplane" message="tns:IAirportService_DeleteAirplane_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/DeleteAirplaneResponse" message="tns:IAirportService_DeleteAirplane_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditAirplane">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/EditAirplane" message="tns:IAirportService_EditAirplane_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/EditAirplaneResponse" message="tns:IAirportService_EditAirplane_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/DeleteCustomer" message="tns:IAirportService_DeleteCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/DeleteCustomerResponse" message="tns:IAirportService_DeleteCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/EditCustomer" message="tns:IAirportService_EditCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/EditCustomerResponse" message="tns:IAirportService_EditCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExpedition">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/DeleteExpedition" message="tns:IAirportService_DeleteExpedition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/DeleteExpeditionResponse" message="tns:IAirportService_DeleteExpedition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditExpedition">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/EditExpedition" message="tns:IAirportService_EditExpedition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/EditExpeditionResponse" message="tns:IAirportService_EditExpedition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/DeletePersonel" message="tns:IAirportService_DeletePersonel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/DeletePersonelResponse" message="tns:IAirportService_DeletePersonel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditPersonel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/EditPersonel" message="tns:IAirportService_EditPersonel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/EditPersonelResponse" message="tns:IAirportService_EditPersonel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/DeleteTicket" message="tns:IAirportService_DeleteTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/DeleteTicketResponse" message="tns:IAirportService_DeleteTicket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/EditTicket" message="tns:IAirportService_EditTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/EditTicketResponse" message="tns:IAirportService_EditTicket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/AddUserTicket" message="tns:IAirportService_AddUserTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/AddUserTicketResponse" message="tns:IAirportService_AddUserTicket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditUserTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/EditUserTicket" message="tns:IAirportService_EditUserTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/EditUserTicketResponse" message="tns:IAirportService_EditUserTicket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/DeleteUserTicket" message="tns:IAirportService_DeleteUserTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/DeleteUserTicketResponse" message="tns:IAirportService_DeleteUserTicket_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTicket">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAirportService/GetUserTicket" message="tns:IAirportService_GetUserTicket_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAirportService/GetUserTicketResponse" message="tns:IAirportService_GetUserTicket_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAirportService" type="tns:IAirportService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCountries">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/GetCountries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCountries">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/AddCountries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCountry">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/DeleteCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddProvince">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/AddProvince" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProvince">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/DeleteProvince" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProvince">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/GetProvince" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/AddCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomers">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/GetCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExpedition">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/AddExpedition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpedition">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/GetExpedition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPersonel">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/AddPersonel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonel">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/GetPersonel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTicket">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/AddTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicket">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/GetTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAirplane">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/AddAirplane" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAirplane">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/GetAirplane" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListForComboBox">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/ListForComboBox" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAirplane">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/DeleteAirplane" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAirplane">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/EditAirplane" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomer">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/DeleteCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomer">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/EditCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteExpedition">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/DeleteExpedition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditExpedition">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/EditExpedition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonel">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/DeletePersonel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditPersonel">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/EditPersonel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTicket">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/DeleteTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditTicket">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/EditTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserTicket">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/AddUserTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUserTicket">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/EditUserTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserTicket">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/DeleteUserTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTicket">
+      <soap:operation soapAction="http://tempuri.org/IAirportService/GetUserTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AirportService">
+    <wsdl:port name="BasicHttpBinding_IAirportService" binding="tns:BasicHttpBinding_IAirportService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Airport.Service/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

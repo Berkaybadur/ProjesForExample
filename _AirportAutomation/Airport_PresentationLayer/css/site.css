@@ -1,0 +1,131 @@
+﻿body {
+}
+.textbox {
+    font-family: Arial Helvetica, Sans-Serif;
+    background-color: aliceblue;
+    border: 1px outset darkblue;
+    padding: 10px;
+   margin-left:50px;  
+   margin-top:34px;
+   width=50px;
+}
+
+.button {
+    background-color: #1864ba;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 200px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+.buttonkayit {
+    background-color: #6495ED;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 105px;
+}
+.login-form {
+		width:540px;
+		margin: 50px auto;
+	}
+    .login-form form {        
+    	margin-bottom: 15px;
+        background: #f7f7f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+    .login-form h2 {
+        margin: 0 0 15px;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+	.input-group-addon .fa {
+        font-size: 18px;
+    }
+    .btn {        
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .carousel-inner img {
+            width: 50%;
+            height: 50%;
+        }
+.image {
+    background-image: url('icons/delete.png');
+}
+.mGrid {
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse:collapse;
+}
+.mGrid td {
+    padding: 2px;
+    border: solid 1px #c1c1c1;
+    color: black;
+}
+.mGrid th {
+    padding: 4px 2px;
+    color: #fff;
+    background: #424242 url(grd_head.png) repeat-x top;
+    border-left: solid 1px #525252;
+    font-size: 0.9em;
+}
+.mGrid .alt { background: #fcfcfc url(grd_alt.png) repeat-x top; }
+.mGrid .pgr { background: #424242 url(grd_pgr.png) repeat-x top; }
+.mGrid .pgr table { margin: 5px 0; }
+.mGrid .pgr td {
+    border-width: 0;
+    padding: 0 6px;
+    border-left: solid 1px #666;
+    font-weight: bold;
+    color: #fff;
+    line-height: 12px;
+ }
+.mGrid .pgr a { color: #666; text-decoration: none; }
+.mGrid .pgr a:hover { color: #000; text-decoration: none; }
+.Grid { border: solid 1px #FFFFFF; }
+.Grid td
+{
+border: solid 1px #FFFFFF;
+margin: 1px 1px 1px 1px;
+padding: 1px 1px 1px 1px;
+text-align: center;
+}
+.GridHeader
+{
+font-weight: bold;
+background-color: #8b8dbb;
+}
+.GridItem
+{
+background-color: #e6e6e6;
+}
+
+.GridAltItem
+{
+background-color: white;
+}
+  .carousel-inner img {
+            width: 50%;
+            height: 50%;
+        }

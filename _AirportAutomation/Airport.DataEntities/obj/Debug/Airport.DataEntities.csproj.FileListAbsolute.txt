@@ -1,0 +1,17 @@
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\bin\Debug\Airport.DataEntities.dll.config
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\bin\Debug\Airport.DataEntities.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\bin\Debug\Airport.DataEntities.pdb
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\bin\Debug\EntityFramework.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\bin\Debug\EntityFramework.xml
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\obj\Debug\Airport.DataEntities.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\obj\Debug\Airport.DataEntities.pdb
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\obj\Debug\Airport.DataEntities.Migrations.Migrations1.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\obj\Debug\Airport.DataEntities.csproj.GenerateResource.Cache
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\obj\Debug\Airport.DataEntities.Migrations.Migrations2.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\obj\Debug\Airport.DataEntities.Migrations.Migration3.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\obj\Debug\Airport.DataEntities.Migrations.Migrations4.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\obj\Debug\Airport.DataEntities.Migrations.Migrations5.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\obj\Debug\Airport.DataEntities.Migrations.Migrations6.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.DataEntities\obj\Debug\Airport.DataEntities.Migrations.Migrations7.resources

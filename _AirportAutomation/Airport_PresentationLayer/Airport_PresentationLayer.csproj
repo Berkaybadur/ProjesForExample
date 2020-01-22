@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9191579D-3E32-4208-977E-9230568B675E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Airport_PresentationLayer</RootNamespace>
+    <AssemblyName>Airport_PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="csss\animate.css" />
+    <Content Include="csss\aos.css" />
+    <Content Include="csss\bootstrap-datepicker.css" />
+    <Content Include="csss\bootstrap-grid.css" />
+    <Content Include="csss\bootstrap-reboot.css" />
+    <Content Include="csss\bootstrap.css" />
+    <Content Include="csss\bootstrap.min.css" />
+    <Content Include="csss\flaticon.css" />
+    <Content Include="csss\flaticons.css" />
+    <Content Include="csss\flexslider.css" />
+    <Content Include="csss\icomoon.css" />
+    <Content Include="csss\ionicons.min.css" />
+    <Content Include="csss\jquery.timepicker.css" />
+    <Content Include="csss\magnific-popup.css" />
+    <Content Include="csss\main.js" />
+    <Content Include="csss\open-iconic-bootstrap.min.css" />
+    <Content Include="csss\owl.carousel.min.css" />
+    <Content Include="csss\owl.theme.default.min.css" />
+    <Content Include="csss\style.css" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\animsition.css" />
+    <Content Include="css\animsition.min.css" />
+    <Content Include="css\aos.css" />
+    <Content Include="css\bootstrap-datepicker.css" />
+    <Content Include="css\daterangepicker.css" />
+    <Content Include="css\flaticon.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\grayscale.css" />
+    <Content Include="css\grayscale.min.css" />
+    <Content Include="css\hamburgers.css" />
+    <Content Include="css\hamburgers.min.css" />
+    <Content Include="css\icomoon.css" />
+    <Content Include="css\icon-font.min.css" />
+    <Content Include="css\ionicons.min.css" />
+    <Content Include="css\jquery.timepicker.css" />
+    <Content Include="css\magnific-popup.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\material-design-iconic-font.css" />
+    <Content Include="css\material-design-iconic-font.min.css" />
+    <Content Include="css\open-iconic-bootstrap.min.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\owl.theme.default.min.css" />
+    <Content Include="css\select2.css" />
+    <Content Include="css\select2.min.css" />
+    <Content Include="css\styleregister.css" />
+    <Content Include="css\styless.css" />
+    <Content Include="css\util.css" />
+    <Content Include="icons\airplane.png" />
+    <Content Include="icons\airplanepanel.png" />
+    <Content Include="icons\delete1.png" />
+    <Content Include="icons\edit.png" />
+    <Content Include="icons\edit1.png" />
+    <Content Include="icons\start1.png" />
+    <Content Include="icons\start.png" />
+    <Content Include="images\airport.jpg" />
+    <Content Include="icons\calendar.png" />
+    <Content Include="icons\delete.png" />
+    <Content Include="icons\home.png" />
+    <Content Include="icons\m3.png" />
+    <Content Include="icons\plane.png" />
+    <Content Include="icons\price2.png" />
+    <Content Include="icons\sefer1.png" />
+    <Content Include="icons\supplier.png" />
+    <Content Include="icons\takvim.png" />
+    <Content Include="icons\tt.png" />
+    <Content Include="icons\userpanel.png" />
+    <Content Include="images\almanya.jpg" />
+    <Content Include="images\antalya.jpg" />
+    <Content Include="images\bg-01.jpg" />
+    <Content Include="images\bg-masthead.jpg" />
+    <Content Include="images\bg_1.jpg" />
+    <Content Include="images\destination-3.jpg" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\fotocamera.jpg" />
+    <Content Include="images\fransa.jpg" />
+    <Content Include="images\hotel-2.jpg" />
+    <Content Include="images\image_1.jpg" />
+    <Content Include="images\image_2.jpg" />
+    <Content Include="images\image_3.jpg" />
+    <Content Include="images\ingiltere.jpg" />
+    <Content Include="images\istanbul.jpg" />
+    <Content Include="images\italya.jpg" />
+    <Content Include="images\malatya.jpg" />
+    <Content Include="images\meksika.jpeg" />
+    <Content Include="images\polonya.jpg" />
+    <Content Include="images\portekiz.jpg" />
+    <Content Include="images\restaurant-5.jpg" />
+    <Content Include="images\s4.jpg" />
+    <Content Include="images\s5.jpg" />
+    <Content Include="images\sss.jpg" />
+    <Content Include="images\travel.jpg" />
+    <Content Include="images\travel1.jpg" />
+    <Content Include="images\travel2.jpg" />
+    <Content Include="images\travel3.jpg" />
+    <Content Include="images\travel4.jpg" />
+    <Content Include="images\ucak.jpg" />
+    <Content Include="js\animsition.js" />
+    <Content Include="js\animsition.min.js" />
+    <Content Include="js\aos.js" />
+    <Content Include="js\bootstrap-datepicker.js" />
+    <Content Include="js\bootstrap-notify.js" />
+    <Content Include="js\chartjs.min.js" />
+    <Content Include="js\countdowntime.js" />
+    <Content Include="js\daterangepicker.js" />
+    <Content Include="js\google-map.js" />
+    <Content Include="js\grayscale.js" />
+    <Content Include="js\grayscale.min.js" />
+    <Content Include="js\jquery-3.2.1.min.js" />
+    <Content Include="js\jquery-migrate-3.0.1.min.js" />
+    <Content Include="js\jquery.animateNumber.min.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.flexslider-min.js" />
+    <Content Include="js\jquery.magnific-popup.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.stellar.min.js" />
+    <Content Include="js\jquery.waypoints.min.js" />
+    <Content Include="js\magnific-popup-options.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\modernizr-2.6.2.min.js" />
+    <Content Include="js\moment.js" />
+    <Content Include="js\moment.min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\perfect-scrollbar.jquery.min.js" />
+    <Content Include="js\popper.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="js\range.js" />
+    <Content Include="js\scrollax.min.js" />
+    <Content Include="js\select2.js" />
+    <Content Include="js\select2.min.js" />
+    <Content Include="panels\AboutUs.aspx" />
+    <Content Include="panels\AdminPanels.aspx" />
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\demo.css" />
+    <Content Include="css\now-ui-dashboard.css" />
+    <Content Include="css\now-ui-dashboard.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\demo.js" />
+    <Content Include="js\now-ui-dashboard.js" />
+    <Content Include="js\now-ui-dashboard.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
+    <Content Include="css\now-ui-dashboard.css.map" />
+    <Content Include="js\now-ui-dashboard.js.map" />
+    <Content Include="js\now-ui-dashboard.scss" />
+    <Content Include="panels\StartPage.aspx" />
+    <Content Include="panels\UserPanel.aspx" />
+    <Content Include="panels\UserTicketPanel.aspx" />
+    <Content Include="Properties\DataSources\Airport.DataEntities.Entities.Countries.datasource" />
+    <Content Include="Properties\DataSources\Airport.DataEntities.Entities.Province.datasource" />
+    <Content Include="Properties\DataSources\Airport.DataEntities.Entities.Airplane.datasource" />
+    <Content Include="Properties\DataSources\Airport.DataEntities.Entities.Customers.datasource" />
+    <Content Include="Properties\DataSources\Airport.DataEntities.Entities.Expedition.datasource" />
+    <Content Include="Properties\DataSources\Airport.DataEntities.Entities.Personel.datasource" />
+    <Content Include="Properties\DataSources\Airport.DataEntities.Entities.Ticket.datasource" />
+    <Content Include="Properties\DataSources\Airport.DataEntities.Entities.Airports.datasource" />
+    <Content Include="css\_masthead.scss" />
+    <Content Include="Properties\DataSources\Airport.DataEntities.Entities.UserTicket.datasource" />
+    <Content Include="AirportDBConnectionDataSet.xsc">
+      <DependentUpon>AirportDBConnectionDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="AirportDBConnectionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AirportDBConnectionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="AirportDBConnectionDataSet.xss">
+      <DependentUpon>AirportDBConnectionDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Service References\AirportReferences\Airport.DataEntities.Entities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirportReferences\service.wsdl" />
+    <None Include="Service References\AirportReferences\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AirportReferences\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="panels\Login.aspx" />
+    <Content Include="panels\AirplanePanel.aspx" />
+    <Content Include="panels\CustomerPanel.aspx" />
+    <Content Include="panels\ExpeditionPanel.aspx" />
+    <Content Include="panels\PersonelPanel.aspx" />
+    <Content Include="panels\TicketPanel.aspx" />
+    <Content Include="panels\Register.aspx" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="css\site.css" />
+    <None Include="Service References\AirportReferences\configuration91.svcinfo" />
+    <None Include="Service References\AirportReferences\configuration.svcinfo" />
+    <None Include="Service References\AirportReferences\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AirportDBConnectionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirportDBConnectionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="panels\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panels\AdminPanels.aspx.cs">
+      <DependentUpon>AdminPanels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\AdminPanels.aspx.designer.cs">
+      <DependentUpon>AdminPanels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panels\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panels\AirplanePanel.aspx.cs">
+      <DependentUpon>AirplanePanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\AirplanePanel.aspx.designer.cs">
+      <DependentUpon>AirplanePanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panels\CustomerPanel.aspx.cs">
+      <DependentUpon>CustomerPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\CustomerPanel.aspx.designer.cs">
+      <DependentUpon>CustomerPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panels\ExpeditionPanel.aspx.cs">
+      <DependentUpon>ExpeditionPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\ExpeditionPanel.aspx.designer.cs">
+      <DependentUpon>ExpeditionPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panels\PersonelPanel.aspx.cs">
+      <DependentUpon>PersonelPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\PersonelPanel.aspx.designer.cs">
+      <DependentUpon>PersonelPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panels\StartPage.aspx.cs">
+      <DependentUpon>StartPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\StartPage.aspx.designer.cs">
+      <DependentUpon>StartPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panels\TicketPanel.aspx.cs">
+      <DependentUpon>TicketPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\TicketPanel.aspx.designer.cs">
+      <DependentUpon>TicketPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panels\UserPanel.aspx.cs">
+      <DependentUpon>UserPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\UserPanel.aspx.designer.cs">
+      <DependentUpon>UserPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panels\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panels\UserTicketPanel.aspx.cs">
+      <DependentUpon>UserTicketPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panels\UserTicketPanel.aspx.designer.cs">
+      <DependentUpon>UserTicketPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\AirportReferences\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Airport.Business\Airport.Business.csproj">
+      <Project>{DA84DA4A-7BDA-4305-9264-D6310B379BDF}</Project>
+      <Name>Airport.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Airport.DataEntities\Airport.DataEntities.csproj">
+      <Project>{F3DCDDD6-5CFA-4640-876A-DBE16764C883}</Project>
+      <Name>Airport.DataEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Airport.Service\Airport.Service.csproj">
+      <Project>{25fff176-4724-4028-90d0-02412ced0572}</Project>
+      <Name>Airport.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AirportReferences\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50889</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50828/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

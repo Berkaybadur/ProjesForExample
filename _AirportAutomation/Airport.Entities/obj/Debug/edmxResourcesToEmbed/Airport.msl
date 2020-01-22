@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AirportAutomationModelStoreContainer" CdmEntityContainer="AirportAutomationEntities">
+    <EntitySetMapping Name="Airplanes">
+      <EntityTypeMapping TypeName="AirportAutomationModel.Airplane">
+        <MappingFragment StoreEntitySet="Airplane">
+          <ScalarProperty Name="AirplaneId" ColumnName="AirplaneId" />
+          <ScalarProperty Name="AirplaneName" ColumnName="AirplaneName" />
+          <ScalarProperty Name="SeatingCapacity" ColumnName="SeatingCapacity" />
+          <ScalarProperty Name="AirportId" ColumnName="AirportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Airports">
+      <EntityTypeMapping TypeName="AirportAutomationModel.Airport">
+        <MappingFragment StoreEntitySet="Airport">
+          <ScalarProperty Name="AirportId" ColumnName="AirportId" />
+          <ScalarProperty Name="AirportName" ColumnName="AirportName" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="AirportAutomationModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="AirportAutomationModel.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerTc" ColumnName="CustomerTc" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerSurname" ColumnName="CustomerSurname" />
+          <ScalarProperty Name="CustomerMail" ColumnName="CustomerMail" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+          <ScalarProperty Name="CustomerAdress" ColumnName="CustomerAdress" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="DegreeId" ColumnName="DegreeId" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Degrees">
+      <EntityTypeMapping TypeName="AirportAutomationModel.Degree">
+        <MappingFragment StoreEntitySet="Degree">
+          <ScalarProperty Name="DegreeId" ColumnName="DegreeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Districts">
+      <EntityTypeMapping TypeName="AirportAutomationModel.District">
+        <MappingFragment StoreEntitySet="District">
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="Province_Id" ColumnName="Province_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Expeditions">
+      <EntityTypeMapping TypeName="AirportAutomationModel.Expedition">
+        <MappingFragment StoreEntitySet="Expedition">
+          <ScalarProperty Name="ExpeditionId" ColumnName="ExpeditionId" />
+          <ScalarProperty Name="DepartureLocation" ColumnName="DepartureLocation" />
+          <ScalarProperty Name="RotationLocation" ColumnName="RotationLocation" />
+          <ScalarProperty Name="DepartureDatetime" ColumnName="DepartureDatetime" />
+          <ScalarProperty Name="RotationDatetime" ColumnName="RotationDatetime" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="AirplaneId" ColumnName="AirplaneId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personels">
+      <EntityTypeMapping TypeName="AirportAutomationModel.Personel">
+        <MappingFragment StoreEntitySet="Personel">
+          <ScalarProperty Name="PersonelId" ColumnName="PersonelId" />
+          <ScalarProperty Name="PersonelTc" ColumnName="PersonelTc" />
+          <ScalarProperty Name="PersonelFirstName" ColumnName="PersonelFirstName" />
+          <ScalarProperty Name="PersonelLastName" ColumnName="PersonelLastName" />
+          <ScalarProperty Name="PersonelPhoneNumber" ColumnName="PersonelPhoneNumber" />
+          <ScalarProperty Name="PersonelAddress" ColumnName="PersonelAddress" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="AirplaneId" ColumnName="AirplaneId" />
+          <ScalarProperty Name="TitleId" ColumnName="TitleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provinces">
+      <EntityTypeMapping TypeName="AirportAutomationModel.Province">
+        <MappingFragment StoreEntitySet="Provinces">
+          <ScalarProperty Name="ProvincesId" ColumnName="ProvincesId" />
+          <ScalarProperty Name="ProvincesName" ColumnName="ProvincesName" />
+          <ScalarProperty Name="Country_Id" ColumnName="Country_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tickets">
+      <EntityTypeMapping TypeName="AirportAutomationModel.Ticket">
+        <MappingFragment StoreEntitySet="Ticket">
+          <ScalarProperty Name="TicketId" ColumnName="TicketId" />
+          <ScalarProperty Name="NumberOfSeats" ColumnName="NumberOfSeats" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ExpeditionId" ColumnName="ExpeditionId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="AirplaneId" ColumnName="AirplaneId" />
+          <ScalarProperty Name="AirportId" ColumnName="AirportId" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Titles">
+      <EntityTypeMapping TypeName="AirportAutomationModel.Title">
+        <MappingFragment StoreEntitySet="Title">
+          <ScalarProperty Name="TitleId" ColumnName="TitleId" />
+          <ScalarProperty Name="Title1" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="AirportAutomationModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

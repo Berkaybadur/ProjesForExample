@@ -1,0 +1,20 @@
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Entities\bin\Debug\Airport.Entities.dll.config
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Entities\bin\Debug\Airport.Entities.dll
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Entities\bin\Debug\Airport.Entities.pdb
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Entities\bin\Debug\EntityFramework.dll
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Entities\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Entities\bin\Debug\EntityFramework.xml
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Entities\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Entities\obj\Debug\Airport.Entities.csprojResolveAssemblyReference.cache
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Entities\obj\Debug\Airport.Entities.dll
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Entities\obj\Debug\Airport.Entities.pdb
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Entities\bin\Debug\Airport.Entities.dll.config
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Entities\bin\Debug\Airport.Entities.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Entities\bin\Debug\Airport.Entities.pdb
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Entities\bin\Debug\EntityFramework.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Entities\bin\Debug\EntityFramework.xml
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Entities\obj\Debug\Airport.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Entities\obj\Debug\Airport.Entities.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Entities\obj\Debug\Airport.Entities.pdb

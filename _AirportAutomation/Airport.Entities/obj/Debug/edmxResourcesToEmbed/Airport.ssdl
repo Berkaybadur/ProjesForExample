@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AirportAutomationModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Airplane">
+    <Key>
+      <PropertyRef Name="AirplaneId" />
+    </Key>
+    <Property Name="AirplaneId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AirplaneName" Type="varchar" MaxLength="50" />
+    <Property Name="SeatingCapacity" Type="varchar" MaxLength="50" />
+    <Property Name="AirportId" Type="int" />
+  </EntityType>
+  <EntityType Name="Airport">
+    <Key>
+      <PropertyRef Name="AirportId" />
+    </Key>
+    <Property Name="AirportId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AirportName" Type="varchar" MaxLength="50" />
+    <Property Name="DistrictId" Type="int" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryId" />
+    </Key>
+    <Property Name="CountryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CountryName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerTc" Type="varchar" MaxLength="11" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerSurname" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerMail" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerPhone" Type="varchar" MaxLength="11" />
+    <Property Name="CustomerAdress" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserPassword" Type="varchar" MaxLength="50" />
+    <Property Name="DegreeId" Type="int" />
+    <Property Name="DistrictId" Type="int" />
+  </EntityType>
+  <EntityType Name="Degree">
+    <Key>
+      <PropertyRef Name="DegreeId" />
+    </Key>
+    <Property Name="DegreeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="District">
+    <Key>
+      <PropertyRef Name="DistrictId" />
+    </Key>
+    <Property Name="DistrictId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DistrictName" Type="varchar" MaxLength="50" />
+    <Property Name="Province_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="Expedition">
+    <Key>
+      <PropertyRef Name="ExpeditionId" />
+    </Key>
+    <Property Name="ExpeditionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DepartureLocation" Type="varchar" MaxLength="50" />
+    <Property Name="RotationLocation" Type="varchar" MaxLength="50" />
+    <Property Name="DepartureDatetime" Type="datetime" />
+    <Property Name="RotationDatetime" Type="datetime" />
+    <Property Name="District" Type="int" />
+    <Property Name="AirplaneId" Type="int" />
+  </EntityType>
+  <EntityType Name="Personel">
+    <Key>
+      <PropertyRef Name="PersonelId" />
+    </Key>
+    <Property Name="PersonelId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PersonelTc" Type="varchar" MaxLength="11" />
+    <Property Name="PersonelFirstName" Type="varchar" MaxLength="25" />
+    <Property Name="PersonelLastName" Type="varchar" MaxLength="25" />
+    <Property Name="PersonelPhoneNumber" Type="varchar" MaxLength="11" />
+    <Property Name="PersonelAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="District" Type="int" />
+    <Property Name="AirplaneId" Type="int" />
+    <Property Name="TitleId" Type="int" />
+  </EntityType>
+  <EntityType Name="Provinces">
+    <Key>
+      <PropertyRef Name="ProvincesId" />
+    </Key>
+    <Property Name="ProvincesId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProvincesName" Type="varchar" MaxLength="50" />
+    <Property Name="Country_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Ticket">
+    <Key>
+      <PropertyRef Name="TicketId" />
+    </Key>
+    <Property Name="TicketId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumberOfSeats" Type="varchar" MaxLength="5" />
+    <Property Name="Price" Type="money" />
+    <Property Name="ExpeditionId" Type="int" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="AirplaneId" Type="int" />
+    <Property Name="AirportId" Type="int" />
+    <Property Name="DistrictId" Type="int" />
+  </EntityType>
+  <EntityType Name="Title">
+    <Key>
+      <PropertyRef Name="TitleId" />
+    </Key>
+    <Property Name="TitleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <Association Name="FK__Customers__Degre__300424B4">
+    <End Role="Degree" Type="Self.Degree" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Degree">
+        <PropertyRef Name="DegreeId" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="DegreeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Customers__Distr__2F10007B">
+    <End Role="District" Type="Self.District" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="DistrictId" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="DistrictId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Expeditio__Airpl__29572725">
+    <End Role="Airplane" Type="Self.Airplane" Multiplicity="0..1" />
+    <End Role="Expedition" Type="Self.Expedition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Airplane">
+        <PropertyRef Name="AirplaneId" />
+      </Principal>
+      <Dependent Role="Expedition">
+        <PropertyRef Name="AirplaneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Expeditio__Distr__286302EC">
+    <End Role="District" Type="Self.District" Multiplicity="0..1" />
+    <End Role="Expedition" Type="Self.Expedition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="DistrictId" />
+      </Principal>
+      <Dependent Role="Expedition">
+        <PropertyRef Name="District" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Personel__Airpla__239E4DCF">
+    <End Role="Airplane" Type="Self.Airplane" Multiplicity="0..1" />
+    <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Airplane">
+        <PropertyRef Name="AirplaneId" />
+      </Principal>
+      <Dependent Role="Personel">
+        <PropertyRef Name="AirplaneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Personel__Distri__25869641">
+    <End Role="District" Type="Self.District" Multiplicity="0..1" />
+    <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="DistrictId" />
+      </Principal>
+      <Dependent Role="Personel">
+        <PropertyRef Name="District" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Personel__TitleI__24927208">
+    <End Role="Title" Type="Self.Title" Multiplicity="0..1" />
+    <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Title">
+        <PropertyRef Name="TitleId" />
+      </Principal>
+      <Dependent Role="Personel">
+        <PropertyRef Name="TitleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ticket__Airplane__34C8D9D1">
+    <End Role="Airplane" Type="Self.Airplane" Multiplicity="0..1" />
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Airplane">
+        <PropertyRef Name="AirplaneId" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="AirplaneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ticket__AirportI__33D4B598">
+    <End Role="Airport" Type="Self.Airport" Multiplicity="0..1" />
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Airport">
+        <PropertyRef Name="AirportId" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="AirportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ticket__Customer__35BCFE0A">
+    <End Role="Customers" Type="Self.Customers" Multiplicity="0..1" />
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ticket__District__37A5467C">
+    <End Role="District" Type="Self.District" Multiplicity="0..1" />
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="DistrictId" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="DistrictId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ticket__Expediti__36B12243">
+    <End Role="Expedition" Type="Self.Expedition" Multiplicity="0..1" />
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Expedition">
+        <PropertyRef Name="ExpeditionId" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="ExpeditionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Airport_Airport">
+    <End Role="Airport" Type="Self.Airport" Multiplicity="0..1" />
+    <End Role="Airplane" Type="Self.Airplane" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Airport">
+        <PropertyRef Name="AirportId" />
+      </Principal>
+      <Dependent Role="Airplane">
+        <PropertyRef Name="AirportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Country_Prov">
+    <End Role="Country" Type="Self.Country" Multiplicity="0..1" />
+    <End Role="Provinces" Type="Self.Provinces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryId" />
+      </Principal>
+      <Dependent Role="Provinces">
+        <PropertyRef Name="Country_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dist_Dist">
+    <End Role="District" Type="Self.District" Multiplicity="0..1" />
+    <End Role="Airport" Type="Self.Airport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="DistrictId" />
+      </Principal>
+      <Dependent Role="Airport">
+        <PropertyRef Name="DistrictId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Prov_Dist">
+    <End Role="Provinces" Type="Self.Provinces" Multiplicity="0..1" />
+    <End Role="District" Type="Self.District" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provinces">
+        <PropertyRef Name="ProvincesId" />
+      </Principal>
+      <Dependent Role="District">
+        <PropertyRef Name="Province_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AirportAutomationModelStoreContainer">
+    <EntitySet Name="Airplane" EntityType="Self.Airplane" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Airport" EntityType="Self.Airport" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Degree" EntityType="Self.Degree" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="District" EntityType="Self.District" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Expedition" EntityType="Self.Expedition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Personel" EntityType="Self.Personel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Provinces" EntityType="Self.Provinces" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ticket" EntityType="Self.Ticket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Title" EntityType="Self.Title" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Customers__Degre__300424B4" Association="Self.FK__Customers__Degre__300424B4">
+      <End Role="Degree" EntitySet="Degree" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Customers__Distr__2F10007B" Association="Self.FK__Customers__Distr__2F10007B">
+      <End Role="District" EntitySet="District" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Expeditio__Airpl__29572725" Association="Self.FK__Expeditio__Airpl__29572725">
+      <End Role="Airplane" EntitySet="Airplane" />
+      <End Role="Expedition" EntitySet="Expedition" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Expeditio__Distr__286302EC" Association="Self.FK__Expeditio__Distr__286302EC">
+      <End Role="District" EntitySet="District" />
+      <End Role="Expedition" EntitySet="Expedition" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Personel__Airpla__239E4DCF" Association="Self.FK__Personel__Airpla__239E4DCF">
+      <End Role="Airplane" EntitySet="Airplane" />
+      <End Role="Personel" EntitySet="Personel" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Personel__Distri__25869641" Association="Self.FK__Personel__Distri__25869641">
+      <End Role="District" EntitySet="District" />
+      <End Role="Personel" EntitySet="Personel" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Personel__TitleI__24927208" Association="Self.FK__Personel__TitleI__24927208">
+      <End Role="Title" EntitySet="Title" />
+      <End Role="Personel" EntitySet="Personel" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ticket__Airplane__34C8D9D1" Association="Self.FK__Ticket__Airplane__34C8D9D1">
+      <End Role="Airplane" EntitySet="Airplane" />
+      <End Role="Ticket" EntitySet="Ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ticket__AirportI__33D4B598" Association="Self.FK__Ticket__AirportI__33D4B598">
+      <End Role="Airport" EntitySet="Airport" />
+      <End Role="Ticket" EntitySet="Ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ticket__Customer__35BCFE0A" Association="Self.FK__Ticket__Customer__35BCFE0A">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Ticket" EntitySet="Ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ticket__District__37A5467C" Association="Self.FK__Ticket__District__37A5467C">
+      <End Role="District" EntitySet="District" />
+      <End Role="Ticket" EntitySet="Ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ticket__Expediti__36B12243" Association="Self.FK__Ticket__Expediti__36B12243">
+      <End Role="Expedition" EntitySet="Expedition" />
+      <End Role="Ticket" EntitySet="Ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Airport_Airport" Association="Self.FK_Airport_Airport">
+      <End Role="Airport" EntitySet="Airport" />
+      <End Role="Airplane" EntitySet="Airplane" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Country_Prov" Association="Self.FK_Country_Prov">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="Provinces" EntitySet="Provinces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dist_Dist" Association="Self.FK_Dist_Dist">
+      <End Role="District" EntitySet="District" />
+      <End Role="Airport" EntitySet="Airport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Prov_Dist" Association="Self.FK_Prov_Dist">
+      <End Role="Provinces" EntitySet="Provinces" />
+      <End Role="District" EntitySet="District" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,24 @@
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\bin\Debug\Airport.Business.dll.config
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\bin\Debug\Airport.Business.dll
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\bin\Debug\Airport.Business.pdb
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\bin\Debug\Airport.Entities.dll
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\bin\Debug\EntityFramework.dll
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\bin\Debug\Airport.Entities.pdb
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\bin\Debug\EntityFramework.xml
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\obj\Debug\Airport.Business.csprojResolveAssemblyReference.cache
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\obj\Debug\Airport.Business.dll
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.Business\obj\Debug\Airport.Business.pdb
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\bin\Debug\Airport.Business.dll.config
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\bin\Debug\Airport.Business.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\bin\Debug\Airport.Business.pdb
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\bin\Debug\Airport.DataEntities.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\bin\Debug\EntityFramework.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\bin\Debug\Airport.DataEntities.pdb
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\bin\Debug\EntityFramework.xml
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\obj\Debug\Airport.Business.csprojResolveAssemblyReference.cache
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\obj\Debug\Airport.Business.dll
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.Business\obj\Debug\Airport.Business.pdb

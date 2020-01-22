@@ -1,0 +1,26 @@
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\bin\Debug\Airport.PresentationLayer.exe.config
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\bin\Debug\Airport.PresentationLayer.exe
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\bin\Debug\Airport.PresentationLayer.pdb
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.csprojResolveAssemblyReference.cache
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.Form1.resources
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.Properties.Resources.resources
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.csproj.GenerateResource.Cache
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.exe
+c:\users\berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.pdb
+C:\Users\Berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.AdminForm.resources
+C:\Users\Berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.LoginForm.resources
+C:\Users\Berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.RegisterForm.resources
+C:\Users\Berkay\documents\visual studio 2015\Projects\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.Panel.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\bin\Debug\Airport.PresentationLayer.exe.config
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\bin\Debug\Airport.PresentationLayer.exe
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\bin\Debug\Airport.PresentationLayer.pdb
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.AdminForm.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.Form1.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.LoginForm.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.Panel.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.Properties.Resources.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.RegisterForm.resources
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.csproj.GenerateResource.Cache
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.exe
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.pdb
+C:\Users\Berkay\Documents\BerkayBadur\_AirportAutomation\Airport.PresentationLayer\obj\Debug\Airport.PresentationLayer.csprojResolveAssemblyReference.cache
