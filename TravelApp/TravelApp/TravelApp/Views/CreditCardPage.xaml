@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="TravelApp.CreditCardPage"
+             xmlns:fastEntry="clr-namespace:XamarinFastEntrySample.FastEntry;assembly=XamarinFastEntry.Behaviors"
+             >
+    <NavigationPage.TitleView>
+        <Label Text="Ödeme"
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="17"
+               Margin="-70,0,0,0"
+                    FontAttributes="Bold"
+                    TextColor="White"/>
+    </NavigationPage.TitleView>
+
+    
+    <ScrollView>
+        <Grid VerticalOptions="FillAndExpand"
+              ColumnSpacing="20"
+              HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout>
+                <Frame Margin="40,10,40,30"
+                   Padding="20"
+                   Visual="Material"
+                   BackgroundColor="White">
+                    <Grid ColumnSpacing="30"
+                      RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Kalkış Yer"
+                           Margin="0,20,0,0"
+                           FontSize="20"
+                           TextColor="Black"
+                           Grid.Row="1"
+                           Grid.Column="0"/>
+
+                        <Label Text="{Binding AirRoutes.RoutesFrom.DistrictName}"
+                            FontSize="15"
+                            TextColor="Black"
+                            Grid.Row="2"
+                            Grid.Column="0"
+                               x:Name="routesfrom"/>
+
+                        <Label Text="Varış Yer"
+                            Margin="0,20,0,0"
+                           FontSize="20"
+                           TextColor="Black"
+                           Grid.Row="1"
+                           Grid.Column="1"/>
+
+                        <Label Text="{Binding AirRoutes.RoutesTo.DistrictName}"
+                            FontSize="15"
+                            TextColor="Black"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                               x:Name="routesto"/>
+
+
+                        <Label Text="Gidiş Tarih"
+                           Margin="0,20,0,0"
+                           FontSize="20"
+                           TextColor="Black"
+                           Grid.Row="3"
+                           Grid.Column="0"/>
+
+                        <Label Text="{Binding AirRoutes.FlyDate}"
+                            FontSize="15"
+                            TextColor="Black"
+                            Grid.Row="4"
+                            Grid.Column="0"
+                               x:Name="flydate"/>
+
+                        <Label Text="Havaalanı"
+                            Margin="0,20,0,0"
+                           FontSize="20"
+                           TextColor="Black"
+                           Grid.Row="3"
+                           Grid.Column="1"/>
+
+                        <Label Text="{Binding AirRoutes.Airport}"
+                            FontSize="15"
+                            TextColor="Black"
+                            Grid.Row="4"
+                            Grid.Column="1"
+                               x:Name="Airport"/>
+                        <Label Text="Fiyat"
+                            Margin="0,0,0,0"
+                           FontSize="20"
+                           TextColor="Black"
+                           Grid.Row="5"
+                           Grid.Column="0"/>
+
+                        <Label Text="{Binding AirRoutes.Price}"
+                            FontSize="15"
+                            TextColor="Black"
+                            Grid.Row="6"
+                            Grid.Column="0"
+                                Margin="0,0,0,0"
+                               x:Name="price"/>
+                        <Label Text="Tl"
+                            Margin="-120,0,0,0"
+                           FontSize="15"
+                           TextColor="Black"
+                           Grid.Row="6"
+                           Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+                <BoxView HorizontalOptions="FillAndExpand"
+                         Color="Black"
+                         Visual="Default"
+                         HeightRequest="1"
+                         WidthRequest="400"
+                         Margin="0,0"
+                         Grid.Row="5"
+                         Grid.Column="0"
+                         Grid.ColumnSpan="3"/>
+                <Label Margin="75,0,0,0">KREDİ KARTI BİLGİLERİNİZİ GİRİNİZ </Label>
+            </StackLayout>
+
+
+            <Frame HasShadow="false"
+                      Padding="10"
+                      BorderColor="White"
+                      Margin="30,30,50,0"
+                      Grid.Row="1"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="3">
+               
+                <StackLayout Orientation="Horizontal"
+                               Spacing="20">
+                
+                    <Image Source="{Binding CardNumber}"
+                               HeightRequest="30"/>
+
+                    <Entry HorizontalOptions="FillAndExpand"
+                               Keyboard="Numeric"
+                            Placeholder="0000-0000-0000-0000"
+                           Visual="Custom"
+                           x:Name="cardnumber">
+                        <Entry.Behaviors>
+                            <fastEntry:XamarinFastEntryBehaviour Mask="####-####-####-####" 
+                                                                       MaxLength="19"/>
+                        </Entry.Behaviors>
+                    </Entry>
+                </StackLayout>
+            </Frame>
+
+            <Frame HasShadow="false"
+                      Padding="10"
+                      BorderColor="AliceBlue"
+                      Margin="30,30,30,0"
+                      Grid.Row="2"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="2"
+                   WidthRequest="50">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="ic_date"
+                               HeightRequest="25"/>
+                    <Entry HorizontalOptions="FillAndExpand"
+                               Keyboard="Numeric"
+                               Visual="Custom"
+                           Placeholder="00/00"
+                           x:Name="Carddate">
+                        <Entry.Behaviors>
+                            <fastEntry:XamarinFastEntryBehaviour Mask="##/##" 
+                                                                   MaxLength="19"/>
+                        </Entry.Behaviors>
+                    </Entry>
+                </StackLayout>
+            </Frame>
+            <Frame HasShadow="false"
+                       Padding="10"
+                      BorderColor="AliceBlue"
+                         Margin="30,30,15,0"
+                      Grid.Row="3"
+                      Grid.Column="0">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="ic_cvv"
+                              HeightRequest="25"/>
+                    <Entry HorizontalOptions="FillAndExpand"
+                              Keyboard="Numeric"
+                              Visual="Custom"
+                           Placeholder="000"
+                           x:Name="Cardcvv">
+                        <Entry.Behaviors>
+                            <fastEntry:XamarinFastEntryBehaviour Mask="###" 
+                                                                   MaxLength="3"/>
+                        </Entry.Behaviors>
+                    </Entry>
+                </StackLayout>
+            </Frame>
+
+
+
+            <Button Text="Ödemeyi Tamamla"
+                         Grid.Row="4"
+                         Grid.Column="0"
+                         Grid.ColumnSpan="3"
+                           CornerRadius="26"
+                         FontSize="18"
+                         Padding="18"
+                         TextColor="White"
+                         Margin="30,0,30,30"
+                    Clicked="paymentclick"
+                    />
+                    
+                    
+                    
+
+            <BoxView HorizontalOptions="FillAndExpand"
+                         Color="Black"
+                         Visual="Default"
+                         HeightRequest="1"
+                         Margin="0,30"
+                         Grid.Row="5"
+                         Grid.Column="0"
+                         Grid.ColumnSpan="3"/>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

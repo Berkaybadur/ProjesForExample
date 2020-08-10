@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TravelApp.Register"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:renderers="clr-namespace:TravelApp.Renderers"
+    xmlns:local="clr-namespace:TravelApp.Validation"
+    xmlns:fastEntry="clr-namespace:XamarinFastEntrySample.FastEntry;assembly=XamarinFastEntry.Behaviors"
+    NavigationPage.HasNavigationBar="False"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    BackgroundColor="DarkOrange"
+      Padding="0,0,0,0"
+    mc:Ignorable="d">
+    <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout >
+            <StackLayout  Margin="0,0,0,0"  Orientation="Horizontal">
+                <StackLayout Margin="20,0,20,0" Spacing="0">
+                    <Label
+                    FontAttributes="Bold"
+                    FontSize="30"
+                    Text=""
+                    TextColor="White"
+                    VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                <Image Source="loginimg" WidthRequest="340" />
+            </StackLayout>
+            <yummy:PancakeView
+            Margin="0,0,0,0"
+            Padding="30,20,30,30"
+            BackgroundColor="White"
+            CornerRadius="40,40,0,0"
+            VerticalOptions="FillAndExpand">
+                <StackLayout Spacing="30">
+                    <StackLayout Spacing="20">
+                        <Label
+                    FontAttributes="Bold"
+                    FontSize="27"
+                    Text="KAYIT OL"
+                    TextColor="#99A1B3"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand" 
+                            Margin="0,0,0,30"/>
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="16"
+                        Text="Kullanıcı Adı"
+                        TextColor="#99A1B3"/>
+                        <StackLayout>
+                            <Frame   
+                            Padding="10,0,0,0"
+                            BackgroundColor="White"
+                            CornerRadius="15"
+                            HeightRequest="50">
+                                <Entry x:Name="Kullaniciadi">
+                                    <Entry.Behaviors>
+                                        <local:MaxlengthValidation MaxLength="15"></local:MaxlengthValidation>
+                                    </Entry.Behaviors>
+                                </Entry>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Spacing="20">
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="16"
+                        Text="Şifre"
+                        TextColor="#99A1B3" />
+                        <StackLayout>
+                            <Frame   
+                            Padding="10,0,0,0"
+                            BackgroundColor="White"
+                            CornerRadius="15"
+                            HeightRequest="50"
+                               >
+                                <Entry x:Name="Sifre" IsPassword="True">
+                                    <Entry.Behaviors>
+                                        <local:MaxlengthValidation MaxLength="15"></local:MaxlengthValidation>
+                                    </Entry.Behaviors>
+                                </Entry>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Spacing="20">
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="16"
+                        Text="Ad"
+                        TextColor="#99A1B3" />
+                        <StackLayout>
+                            <Frame   
+                            Padding="10,0,0,0"
+                            BackgroundColor="White"
+                            CornerRadius="15"
+                            HeightRequest="50">
+                                <Entry x:Name="Ad">
+                                    <Entry.Behaviors>
+                                        <local:MaxlengthValidation MaxLength="15"></local:MaxlengthValidation>
+                                        <local:RequiredValidation></local:RequiredValidation>
+                                    </Entry.Behaviors>
+                                </Entry>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Spacing="20">
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="16"
+                        Text="Soyad"
+                        TextColor="#99A1B3" />
+                        <StackLayout>
+                            <Frame   
+                            Padding="10,0,0,0"
+                            BackgroundColor="White"
+                            CornerRadius="15"
+                            HeightRequest="50">
+                                <Entry x:Name="Soyadi">
+                                    <Entry.Behaviors>
+                                        <local:MaxlengthValidation MaxLength="15"></local:MaxlengthValidation>
+                                    </Entry.Behaviors>
+                                </Entry>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Spacing="20">
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="16"
+                        Text="Telefon Numarası"
+                        TextColor="#99A1B3" 
+                            />
+                        <StackLayout>
+                            <Frame   
+                            Padding="10,0,0,0"
+                            BackgroundColor="White"
+                            CornerRadius="15"
+                            HeightRequest="50"
+                               >
+                                <Entry x:Name="Telefon" Keyboard="Numeric">
+                                    <Entry.Behaviors>
+                                        <fastEntry:XamarinFastEntryBehaviour 
+                                                                       MaxLength="11"/>
+                                    </Entry.Behaviors>
+                                </Entry>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                    <yummy:PancakeView
+                    BackgroundColor="DarkOrange"
+                    BorderThickness="1"
+                    CornerRadius="25"
+                    Elevation="3"
+                    HeightRequest="50"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="150">
+                        <Label
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Kayıt Ol"
+                        TextColor="White"
+                        VerticalOptions="CenterAndExpand" >
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="RegisterClick" ></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </yummy:PancakeView>
+                    <StackLayout Spacing="10" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <yummy:PancakeView
+                        BackgroundColor="#FF5A00"
+                        BorderThickness="1"
+                        CornerRadius="20"
+                        Elevation="3"
+                        HeightRequest="60"
+                        HorizontalOptions="Center"
+                        WidthRequest="60">
+                            <Image
+                            Margin="15"
+                            Aspect="AspectFit"
+                            HeightRequest="20"
+                            Source="google"
+                            WidthRequest="20" />
+                        </yummy:PancakeView>
+                        <yummy:PancakeView
+                        BackgroundColor="#4359AC"
+                        BorderThickness="1"
+                        CornerRadius="20"
+                        Elevation="3"
+                        HeightRequest="60"
+                        HorizontalOptions="Center"
+                        WidthRequest="60">
+                            <Image
+                            Margin="15"
+                            Aspect="AspectFit"
+                            HeightRequest="20"
+                            Source="facebook"
+                            WidthRequest="20" />
+                        </yummy:PancakeView>
+                        <yummy:PancakeView
+                        BackgroundColor="#1DA1F2"
+                        BorderThickness="1"
+                        CornerRadius="20"
+                        Elevation="3"
+                        HeightRequest="60"
+                        HorizontalOptions="Center"
+                        WidthRequest="60">
+                            <Image
+                            Margin="15"
+                            Aspect="AspectFit"
+                            HeightRequest="20"
+                            Source="twitter"
+                            WidthRequest="20" />
+                        </yummy:PancakeView>
+                    </StackLayout>
+                    <Label
+                        FontAttributes="None"
+                        FontSize="15"
+                        HorizontalOptions="CenterAndExpand"
+                        TextColor="#99A1B3"
+                        VerticalOptions="CenterAndExpand" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="LoginClick" ></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Hesaba Sahip misiniz?" ></Span>
+                                <Span TextColor="#791AE5" Text="Giriş Yap"></Span>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                </StackLayout>
+            </yummy:PancakeView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
